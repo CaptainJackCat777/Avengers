@@ -8,6 +8,7 @@ namespace Avengers
     {
         public static void Main(string[] args)
         {
+            // test comment bla bla
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
