@@ -36,7 +36,11 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
+.logo{
+    padding-left: 30px;
+    padding-top: 20px ;
+    
+}
 .wrapper{
     width: 200;
     text-align: center;
