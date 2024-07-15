@@ -124,6 +124,13 @@ a:hover{
     color: var(--second-color);
     outline: none;
 }
+
+.select-menu .input-field option {
+    background-color:var(--primary-color); 
+    color: rgb(179, 172, 172);
+    
+  }
+
 #user{
     margin-bottom: 10px;
 }
