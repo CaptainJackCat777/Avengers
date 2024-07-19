@@ -16,5 +16,7 @@
         public string? Password { get; set; }
         public string? MobilePhone { get; set; }
         public string? SClass { get; set; }
+        public string? created { get; set; }
+        public string? last_modified { get; set; }
     }
 }

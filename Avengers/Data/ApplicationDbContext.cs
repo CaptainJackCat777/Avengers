@@ -12,24 +12,13 @@ namespace Avengers.Data
         }
 
         // DbSets for your models
-
         public DbSet<Classes> Classes { get; set; }
-
-        // DbSets for your models
-
-        public DbSet<Avengers.Models.Students>? Students { get; set; }
-
-        // DbSets for your models
-
-        public DbSet<Avengers.Models.Subjects>? Subjects { get; set; }
-
-
-
-        // DbSets for your models
-
-        public DbSet<Avengers.Models.Teachers>? Teachers { get; set; }
-
-        // DbSets for your models
+        public DbSet<Homework_assignments> HomeworkAssignments { get; set; }
+        public DbSet<Homework_creation> HomeworkCreations { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Subjects> Subjects { get; set; }
+        public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<Users> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,25 +27,20 @@ namespace Avengers.Data
             // Fluent API configurations (optional)
 
             // Example: Configure relationships and keys
-            modelBuilder.Entity<Assignment_x_students>()
-                .HasOne(a => a.Student)
-                .WithMany()
-                .HasForeignKey(a => a.StudentId);
-
-            modelBuilder.Entity<Assignment_x_students>()
-                .HasOne(a => a.Asignemnt)
-                .WithMany()
-                .HasForeignKey(a => a.AssignmentId);
 
             modelBuilder.Entity<Homework_assignments>()
                 .HasOne(h => h.Subject)
                 .WithMany()
-                .HasForeignKey(h => h.SunjectId);
+                .HasForeignKey(h => h.SubjectId);
 
             modelBuilder.Entity<Homework_assignments>()
                 .HasOne(h => h.Teacher)
                 .WithMany()
                 .HasForeignKey(h => h.TeacherId);
+
+            modelBuilder.Entity<Homework_assignments>()
+                .HasMany(h => h.Students)
+                .WithMany(s => s.Assignments);
 
             modelBuilder.Entity<Homework_creation>()
                 .HasOne(h => h.Student)
@@ -71,11 +55,7 @@ namespace Avengers.Data
             modelBuilder.Entity<Teachers>()
                 .HasOne(t => t.Subject)
                 .WithMany()
-                .HasForeignKey(t => t.SunjectId);
+                .HasForeignKey(t => t.SubjectId);
         }
-
-        // DbSets for your models
-
-        public DbSet<Avengers.Models.Homework_assignments>? Homework_assignments { get; set; }
     }
 }
