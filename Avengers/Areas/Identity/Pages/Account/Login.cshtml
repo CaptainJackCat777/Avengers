@@ -1,0 +1,85 @@
+﻿@page
+@model LoginModel
+
+@{
+   
+}
+<link href="./OurStyle.css" rel="stylesheet">
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/OurStyle.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <div class="logo"><img src="/images/avengers-logo.png" width="200px"></div>
+
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <span>Login</span>
+            </div>
+            <div class="input-box">
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Username</label>
+
+            </div>
+            <div class="input-box">
+                <input type="password" id="pass" class="input-field" required>
+                <label for="pass" class="label">Password</label>
+
+            </div>
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember"> Remember me </label>
+                </div>
+                <div class="forgot">
+                    <a href="#"> Forgot password?! </a>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="input-submit" value="Login">
+            </div>
+            <!--<div class="register">
+              <span> Don't have an account? <a href="#">Register</a></span>
+            </div>-->
+        </div>
+    </div>
+</body>
+
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
