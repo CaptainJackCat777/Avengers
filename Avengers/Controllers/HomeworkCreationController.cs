@@ -1,83 +1,174 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Avengers.Data;
+using Avengers.Models;
 
 namespace Avengers.Controllers
 {
     public class HomeworkCreationController : Controller
     {
-        // GET: HomeworkCreationController
-        public ActionResult Index()
+        private readonly ApplicationDbContext _context;
+
+        public HomeworkCreationController(ApplicationDbContext context)
         {
+            _context = context;
+        }
+
+        // GET: HomeworkCreation
+        public async Task<IActionResult> Index()
+        {
+            var applicationDbContext = _context.HomeworkCreations.Include(h => h.HomeworkAssignment).Include(h => h.Student);
+            return View(await applicationDbContext.ToListAsync());
+        }
+
+        // GET: HomeworkCreation/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.HomeworkCreations == null)
+            {
+                return NotFound();
+            }
+
+            var homework_creation = await _context.HomeworkCreations
+                .Include(h => h.HomeworkAssignment)
+                .Include(h => h.Student)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (homework_creation == null)
+            {
+                return NotFound();
+            }
+
+            return View(homework_creation);
+        }
+
+        // GET: HomeworkCreation/Create
+        public IActionResult Create()
+        {
+            ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Id");
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Id");
             return View();
         }
 
-        // GET: HomeworkCreationController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: HomeworkCreationController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeworkCreationController/Create
+        // POST: HomeworkCreation/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create([Bind("Id,Created,LastModified,Text,FilePath,StudentId,Grade,HomeworkAssignmentId")] Homework_creation homework_creation)
         {
-            try
+            if (ModelState.IsValid)
             {
+                _context.Add(homework_creation);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Id", homework_creation.HomeworkAssignmentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Id", homework_creation.StudentId);
+            return View(homework_creation);
         }
 
-        // GET: HomeworkCreationController/Edit/5
-        public ActionResult Edit(int id)
+        // GET: HomeworkCreation/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null || _context.HomeworkCreations == null)
+            {
+                return NotFound();
+            }
+
+            var homework_creation = await _context.HomeworkCreations.FindAsync(id);
+            if (homework_creation == null)
+            {
+                return NotFound();
+            }
+            ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Id", homework_creation.HomeworkAssignmentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Id", homework_creation.StudentId);
+            return View(homework_creation);
         }
 
-        // POST: HomeworkCreationController/Edit/5
+        // POST: HomeworkCreation/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Created,LastModified,Text,FilePath,StudentId,Grade,HomeworkAssignmentId")] Homework_creation homework_creation)
         {
-            try
+            if (id != homework_creation.Id)
             {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(homework_creation);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!Homework_creationExists(homework_creation.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Id", homework_creation.HomeworkAssignmentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Id", homework_creation.StudentId);
+            return View(homework_creation);
         }
 
-        // GET: HomeworkCreationController/Delete/5
-        public ActionResult Delete(int id)
+        // GET: HomeworkCreation/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null || _context.HomeworkCreations == null)
+            {
+                return NotFound();
+            }
+
+            var homework_creation = await _context.HomeworkCreations
+                .Include(h => h.HomeworkAssignment)
+                .Include(h => h.Student)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (homework_creation == null)
+            {
+                return NotFound();
+            }
+
+            return View(homework_creation);
         }
 
-        // POST: HomeworkCreationController/Delete/5
-        [HttpPost]
+        // POST: HomeworkCreation/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            if (_context.HomeworkCreations == null)
             {
-                return RedirectToAction(nameof(Index));
+                return Problem("Entity set 'ApplicationDbContext.HomeworkCreations'  is null.");
             }
-            catch
+            var homework_creation = await _context.HomeworkCreations.FindAsync(id);
+            if (homework_creation != null)
             {
-                return View();
+                _context.HomeworkCreations.Remove(homework_creation);
             }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool Homework_creationExists(int id)
+        {
+          return (_context.HomeworkCreations?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

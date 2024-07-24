@@ -1,0 +1,76 @@
+﻿@page
+@model Avengers.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/OurStyle.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="logo"><img src="/images/avengers-logo.png" width="200px"></div>
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <span>Register</span>
+            </div>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="input-box">
+                    <input asp-for="Users.Email" class="input-field" required>
+                    <label asp-for="Users.Email" class="label"></label>
+                    <span asp-validation-for="Users.Email" class="text-danger"></span>
+                </div>
+
+                <div class="input-box">
+                    <input asp-for="Users.MobilePhone" class="input-field" required>
+                    <label asp-for="Users.MobilePhone" class="label"></label>
+                    <span asp-validation-for="Users.MobilePhone" class="text-danger"></span>
+                </div>
+
+                <div class="input-box">
+                    <input asp-for="Users.Name" class="input-field" required>
+                    <label asp-for="Users.Name" class="label"></label>
+                    <span asp-validation-for="Users.Name" class="text-danger"></span>
+                </div>
+
+                <div class="select-menu">
+                    <select asp-for="Users.UserRole" class="input-field" aria-label="Default select example" required>
+                        <option value="">Role</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Administrator">Administrator</option>
+                    </select>
+                    <span asp-validation-for="Users.UserRole" class="text-danger"></span>
+                </div>
+
+                <div class="input-box">
+                    <input asp-for="Users.Password" type="password" class="input-field" required>
+                    <label asp-for="Users.Password" class="label"></label>
+                    <span asp-validation-for="Users.Password" class="text-danger"></span>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="confirm" class="input-field" required>
+                    <label for="confirm" class="label">Confirm password</label>
+                    <!-- Add custom validation message for password confirmation if needed -->
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="input-submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

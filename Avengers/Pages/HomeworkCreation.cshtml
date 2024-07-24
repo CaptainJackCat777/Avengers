@@ -1,0 +1,66 @@
+﻿@page "{id:int}"
+@model Avengers.Pages.HomeworkCreationModel
+
+@{
+    ViewData["Title"] = "Homework Creation";
+}
+
+<h1>Homework Creation</h1>
+
+@if (Model.HomeworkAssignment != null)
+{
+<div>
+    <h3>Assignment Details</h3>
+    <p><strong>Title:</strong> @Model.HomeworkAssignment.Title</p>
+
+    <p><strong>Due Date:</strong> @Model.HomeworkAssignment.DueDate</p>
+    <!-- Add any additional assignment details you want to display -->
+</div>
+}
+
+<hr />
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.Created" class="control-label"></label>
+        <input asp-for="Homework_creation.Created" class="form-control" />
+        <span asp-validation-for="Homework_creation.Created" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.LastModified" class="control-label"></label>
+        <input asp-for="Homework_creation.LastModified" class="form-control" />
+        <span asp-validation-for="Homework_creation.LastModified" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.Text" class="control-label"></label>
+        <input asp-for="Homework_creation.Text" class="form-control" />
+        <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.FilePath" class="control-label"></label>
+        <input asp-for="Homework_creation.FilePath" class="form-control" />
+        <span asp-validation-for="Homework_creation.FilePath" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.StudentId" class="control-label"></label>
+        <select asp-for="Homework_creation.StudentId" class="form-control" asp-items="ViewBag.StudentId"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Homework_creation.Grade" class="control-label"></label>
+        <input asp-for="Homework_creation.Grade" class="form-control" />
+        <span asp-validation-for="Homework_creation.Grade" class="text-danger"></span>
+    </div>
+   
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -49,9 +49,6 @@ namespace Avengers.Data.Migrations
                     b.Property<string>("DueDate")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Grade")
-                        .HasColumnType("int");
-
                     b.Property<int?>("SubjectId")
                         .HasColumnType("int");
 
@@ -78,22 +75,30 @@ namespace Avengers.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Created")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Grade")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("HomeworkAssignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastModified")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<string>("created")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("file_path")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("last_modified")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("text")
+                    b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HomeworkAssignmentId");
 
                     b.HasIndex("StudentId");
 
@@ -147,6 +152,71 @@ namespace Avengers.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Subjects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Mathematics",
+                            created = "2024-07-24T22:20:38.3106855Z",
+                            last_modified = "2024-07-24T22:20:38.3106870Z"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "English",
+                            created = "2024-07-24T22:20:38.3106873Z",
+                            last_modified = "2024-07-24T22:20:38.3106874Z"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Geography",
+                            created = "2024-07-24T22:20:38.3106875Z",
+                            last_modified = "2024-07-24T22:20:38.3106875Z"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "History",
+                            created = "2024-07-24T22:20:38.3106876Z",
+                            last_modified = "2024-07-24T22:20:38.3106877Z"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Physics",
+                            created = "2024-07-24T22:20:38.3106878Z",
+                            last_modified = "2024-07-24T22:20:38.3106879Z"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Information Technology",
+                            created = "2024-07-24T22:20:38.3106880Z",
+                            last_modified = "2024-07-24T22:20:38.3106881Z"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Bulgarian",
+                            created = "2024-07-24T22:20:38.3106882Z",
+                            last_modified = "2024-07-24T22:20:38.3106883Z"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Biology",
+                            created = "2024-07-24T22:20:38.3106884Z",
+                            last_modified = "2024-07-24T22:20:38.3106884Z"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Physical Education",
+                            created = "2024-07-24T22:20:38.3106885Z",
+                            last_modified = "2024-07-24T22:20:38.3106886Z"
+                        });
                 });
 
             modelBuilder.Entity("Avengers.Models.Teachers", b =>
@@ -447,9 +517,15 @@ namespace Avengers.Data.Migrations
 
             modelBuilder.Entity("Avengers.Models.Homework_creation", b =>
                 {
+                    b.HasOne("Avengers.Models.Homework_assignments", "HomeworkAssignment")
+                        .WithMany("HomeworkCreations")
+                        .HasForeignKey("HomeworkAssignmentId");
+
                     b.HasOne("Avengers.Models.Students", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId");
+
+                    b.Navigation("HomeworkAssignment");
 
                     b.Navigation("Student");
                 });
@@ -536,6 +612,11 @@ namespace Avengers.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Avengers.Models.Homework_assignments", b =>
+                {
+                    b.Navigation("HomeworkCreations");
                 });
 #pragma warning restore 612, 618
         }

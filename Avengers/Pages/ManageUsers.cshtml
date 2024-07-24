@@ -1,0 +1,62 @@
+﻿@page
+@model Avengers.Pages.ManageUsersModel
+@using Avengers.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Manage Teachers</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model.Teachers)
+        {
+            <tr>
+                <td>@teacher.Id</td>
+                <td>@teacher.Name</td>
+                <td>
+                    <form method="post" asp-page-handler="AssignSubject">
+                        <input type="hidden" name="TeacherId" value="@teacher.Id" />
+                        @Html.DropDownList("SelectedSubjectId", new SelectList(Model.Subjects, "Id", "Name", teacher.SubjectId), "Select Subject", new { @class = "form-control" })
+                        <input type="submit" value="Assign Subject" class="btn btn-primary" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h1>Manage Students</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>
+                    <form method="post" asp-page-handler="AssignClass">
+                        <input type="hidden" name="StudentId" value="@student.Id" />
+                        @Html.DropDownList("SelectedClassId", new SelectList(Model.Classes, "Id", "homeroom_teacher", student.ClassID), "Select Class", new { @class = "form-control" })
+                        <input type="submit" value="Assign Class" class="btn btn-primary" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

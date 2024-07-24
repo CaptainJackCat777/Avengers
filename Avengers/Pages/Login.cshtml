@@ -1,50 +1,55 @@
 ﻿@page
 @model Avengers.Pages.LoginModel
 @{
+    ViewData["Title"] = "Login";
 }
 
+<h1>@ViewData["Title"]</h1>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/OurStyle.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-
-    <div class="logo"><img src="avengers-logo.png" width="200px"></div>
-
+    <div class="logo"><img src="/images/avengers-logo.png" width="200px"></div>
     <div class="wrapper">
         <div class="login-box">
             <div class="login-header">
                 <span>Login</span>
             </div>
-            <div class="input-box">
-                <input type="text" id="user" class="input-field" required>
-                <label for="user" class="label">Username</label>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            </div>
-            <div class="input-box">
-                <input type="password" id="pass" class="input-field" required>
-                <label for="pass" class="label">Password</label>
+                <div class="input-box">
+                    <input asp-for="Login.Email" class="input-field" required>
+                    <label asp-for="Login.Email" class="label">E-mail</label>
+                    <span asp-validation-for="Login.Email" class="text-danger"></span>
+                </div>
 
-            </div>
-            <div class="remember-forgot">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember"> Remember me </label>
+                <div class="input-box">
+                    <input asp-for="Login.Password" type="password" class="input-field" required>
+                    <label asp-for="Login.Password" class="label">Password</label>
+                    <span asp-validation-for="Login.Password" class="text-danger"></span>
                 </div>
-                <div class="forgot">
-                    <a href="#"> Forgot password?! </a>
+
+                <div class="input-box">
+                    <input type="submit" class="input-submit" value="Login">
                 </div>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="input-submit" value="Login">
-            </div>
-            <!--<div class="register">
-              <span> Don't have an account? <a href="#">Register</a></span>
-            </div>-->
+
+                <div class="text-danger">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <p>@error.ErrorMessage</p>
+                    }
+                </div>
+            </form>
         </div>
     </div>
 </body>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

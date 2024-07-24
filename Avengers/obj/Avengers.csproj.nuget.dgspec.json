@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj": {}
+    "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Avengers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj": {
+    "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Avengers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj",
+        "projectUniqueName": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Avengers.csproj",
         "projectName": "Avengers",
-        "projectPath": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj",
+        "projectPath": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Avengers.csproj",
         "packagesPath": "C:\\Users\\V122\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\obj\\",
+        "outputPath": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\V122\\AppData\\Roaming\\NuGet\\NuGet.Config",
