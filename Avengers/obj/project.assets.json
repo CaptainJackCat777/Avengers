@@ -10761,19 +10761,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\V122\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main · CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Avengers.csproj",
       "projectName": "Avengers",
-      "projectPath": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\Avengers.csproj",
-      "packagesPath": "C:\\Users\\V122\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main · CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Avengers.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main · CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\V122\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
