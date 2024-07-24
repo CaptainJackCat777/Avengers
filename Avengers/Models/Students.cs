@@ -8,6 +8,6 @@
         public Classes? Class { get; set; }
         public string? created { get; set; }
         public string? last_modified { get; set; }
-        public ICollection<Homework_assignments>? Assignments { get; set; }
+        public ICollection<HomeworkAssignments>? Assignments { get; set; }
     }
 }

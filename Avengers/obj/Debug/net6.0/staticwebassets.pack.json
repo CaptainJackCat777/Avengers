@@ -20853,6 +20853,10 @@
       "PackagePath": "staticwebassets\\plugins\\xml\\plugin.js"
     },
     {
+      "Id": "C:\\Users\\V122\\Documents\\work\\projects\\Avengers\\Avengers\\wwwroot\\uploads\\ЧЕСТИТО.docx",
+      "PackagePath": "staticwebassets\\uploads\\ЧЕСТИТО.docx"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Avengers.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

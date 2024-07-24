@@ -46,28 +46,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Calendar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Charts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Editor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdG9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/EmailCompose.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1haWxDb21wb3NlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/EmailInbox.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1haWxJbmJveC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/EmailRead.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1haWxSZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Error.cshtml]
@@ -78,16 +58,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/HomeworkAssignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXdvcmtBc3NpZ25tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/HomeworkCreation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXdvcmtDcmVhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Planner.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/Privacy.cshtml]
@@ -112,10 +92,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/V122/Documents/work/projects/Avengers/Avengers/Views/HomeworkAssignments/Homework_assignments.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZXdvcmtBc3NpZ25tZW50c1xIb21ld29ya19hc3NpZ25tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/V122/Documents/work/projects/Avengers/Avengers/Views/Shared/_ValidationScriptsPartial.cshtml]

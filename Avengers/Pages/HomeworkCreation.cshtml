@@ -1,0 +1,199 @@
+﻿@page "{id:int?}"
+@model Avengers.Pages.HomeworkCreationModel
+@{
+    ViewData["Title"] = "Homework Creation";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="main-wrapper">
+        <div class="content-body">
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Homework Creation</h3>
+
+                                <!-- Table showing all HomeworkCreations -->
+                                <div class="mb-3">
+                                    <h4>All Homework Creations</h4>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Text</th>
+                                                <th>Created</th>
+                                                <th>Last Modified</th>
+                                                <th>File Path</th>
+                                                <th>Student ID</th>
+                                                <th>Assignment ID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.HomeworkCreations)
+                                            {
+                                                <tr>
+                                                    <td>@item.Id</td>
+                                                    <td>@item.Text</td>
+                                                    <td>@item.Created</td>
+                                                    <td>@item.LastModified</td>
+                                                    <td>@item.FilePath</td>
+                                                    <td>@item.StudentId</td>
+                                                    <td>@item.HomeworkAssignment.Id</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Table showing current assignment details -->
+                                @if (Model.HomeworkCreation.HomeworkAssignment != null)
+                                {
+                                    <div class="mb-3">
+                                        <h4>Current Assignment</h4>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Assignment ID</th>
+                                                    <th>Title</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>@Model.HomeworkCreation.HomeworkAssignment.Id</td>
+                                                    <td>@Model.HomeworkCreation.HomeworkAssignment.Title</td>
+                                                    <td>@Model.HomeworkCreation.HomeworkAssignment.Description</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+
+
+                                <form id="createHomeworkForm" method="post">
+                                    <input type="hidden" name="HomeworkCreation.HomeworkAssignment.Id" value="@Model.HomeworkCreation.HomeworkAssignment.Id" />
+                                    <div class="form-group">
+                                        <label asp-for="HomeworkCreation.Text"></label>
+                                        <textarea asp-for="HomeworkCreation.Text" class="form-control" id="Description"></textarea>
+                                        <span asp-validation-for="HomeworkCreation.Text" class="text-danger"></span>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+                                </form>
+
+                                <form id="submitHomeworkForm" method="post" asp-page-handler="Create" enctype="multipart/form-data">
+                                    <input type="hidden" name="HomeworkCreation.HomeworkAssignment" value="@Model.HomeworkCreation.HomeworkAssignment" />
+                                    <input type="hidden" name="HomeworkCreation.Id" value="@Model.HomeworkCreation.Id" />
+                                    <input type="hidden" name="HomeworkCreation.Created" value="@Model.HomeworkCreation.Created" />
+                                    <input type="hidden" name="HomeworkCreation.LastModified" value="@Model.HomeworkCreation.LastModified" />
+                                    <input type="hidden" name="HomeworkCreation.FilePath" value="@Model.HomeworkCreation.FilePath" />
+                                    <input type="hidden" name="HomeworkCreation.StudentId" value="@Model.HomeworkCreation.StudentId" />
+
+                                   
+
+                                    <button type="button" class="btn btn-primary" id="createButton">Create</button>
+                                </form>
+
+
+                                <div id="message"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('Description');
+    </script>
+   <script>
+    $(document).ready(function () {
+        $('#saveButton').on('click', function () {
+            var formData = $('#createHomeworkForm').serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Page("HomeworkCreation", "Save")',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#message').html('<div class="alert alert-success mt-3">Changes saved successfully!</div>');
+                        // Optionally, refresh the assignment details here
+                    } else {
+                        var errorHtml = '<div class="alert alert-danger mt-3">' + response.message + '</div>';
+                        if (response.details) {
+                            errorHtml += '<ul>';
+                            $.each(response.details, function (index, detail) {
+                                errorHtml += '<li><strong>' + detail.Key + ':</strong> ' + detail.Errors.join(', ') + '</li>';
+                            });
+                            errorHtml += '</ul>';
+                        }
+                        $('#message').html(errorHtml);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#message').html('<div class="alert alert-danger mt-3">An error occurred: ' + error + '</div>');
+                }
+            });
+        });
+
+        $('#createButton').on('click', function () {
+            var formData = $('#submitHomeworkForm').serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Page("HomeworkCreation", "Create")',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#message').html('<div class="alert alert-success mt-3">' + response.message + '</div>');
+                        // Refresh the table with new data
+                        var rows = '';
+                        $.each(response.homeworkCreations, function (index, item) {
+                            rows += '<tr>' +
+                                '<td>' + item.id + '</td>' +
+                                '<td>' + item.text + '</td>' +
+                                '<td>' + item.created + '</td>' +
+                                '<td>' + item.lastModified + '</td>' +
+                                '<td>' + item.filePath + '</td>' +
+                                '<td>' + item.studentId + '</td>' +
+                                '<td>' + item.homeworkAssignment.Id + '</td>' +
+                                '</tr>';
+                        });
+                        $('.table tbody').html(rows);
+                    } else {
+                        $('#message').html('<div class="alert alert-danger mt-3">' + response.message + '</div>');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#message').html('<div class="alert alert-danger mt-3">An error occurred: ' + error + '</div>');
+                }
+            });
+        });
+    });
+</script>
+
+
+
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+</body>
+</html>

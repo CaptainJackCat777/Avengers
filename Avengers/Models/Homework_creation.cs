@@ -1,13 +1,18 @@
-﻿namespace Avengers.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Avengers.Models
 {
-    public class Homework_creation
+    public class HomeworkCreation
     {
         public int Id { get; set; }
-        public string? created { get; set; }
-        public string? last_modified { get; set; }
-        public string? text { get; set; }
-        public string? file_path { get; set; }
+        public string? Created { get; set; }
+        public string? LastModified { get; set; }
+        public string? Text { get; set; }
+        public string? FilePath { get; set; }
         public int? StudentId { get; set; }
         public Students? Student { get; set; }
+        [Required]
+       
+        public HomeworkAssignments HomeworkAssignment { get; set; }
     }
 }

@@ -38,13 +38,16 @@ namespace Avengers.Data.Migrations
                     b.ToTable("Classes");
                 });
 
-            modelBuilder.Entity("Avengers.Models.Homework_assignments", b =>
+            modelBuilder.Entity("Avengers.Models.HomeworkAssignments", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DueDate")
                         .HasColumnType("nvarchar(max)");
@@ -70,7 +73,7 @@ namespace Avengers.Data.Migrations
                     b.ToTable("HomeworkAssignments");
                 });
 
-            modelBuilder.Entity("Avengers.Models.Homework_creation", b =>
+            modelBuilder.Entity("Avengers.Models.HomeworkCreation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -78,22 +81,27 @@ namespace Avengers.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Created")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HomeworkAssignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastModified")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<string>("created")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("file_path")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("last_modified")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("text")
+                    b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HomeworkAssignmentId");
 
                     b.HasIndex("StudentId");
 
@@ -213,7 +221,7 @@ namespace Avengers.Data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Homework_assignmentsStudents", b =>
+            modelBuilder.Entity("HomeworkAssignmentsStudents", b =>
                 {
                     b.Property<int>("AssignmentsId")
                         .HasColumnType("int");
@@ -225,7 +233,7 @@ namespace Avengers.Data.Migrations
 
                     b.HasIndex("StudentsId");
 
-                    b.ToTable("Homework_assignmentsStudents");
+                    b.ToTable("HomeworkAssignmentsStudents");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -430,7 +438,7 @@ namespace Avengers.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Avengers.Models.Homework_assignments", b =>
+            modelBuilder.Entity("Avengers.Models.HomeworkAssignments", b =>
                 {
                     b.HasOne("Avengers.Models.Subjects", "Subject")
                         .WithMany()
@@ -445,11 +453,19 @@ namespace Avengers.Data.Migrations
                     b.Navigation("Teacher");
                 });
 
-            modelBuilder.Entity("Avengers.Models.Homework_creation", b =>
+            modelBuilder.Entity("Avengers.Models.HomeworkCreation", b =>
                 {
+                    b.HasOne("Avengers.Models.HomeworkAssignments", "HomeworkAssignment")
+                        .WithMany()
+                        .HasForeignKey("HomeworkAssignmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Avengers.Models.Students", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId");
+
+                    b.Navigation("HomeworkAssignment");
 
                     b.Navigation("Student");
                 });
@@ -472,9 +488,9 @@ namespace Avengers.Data.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("Homework_assignmentsStudents", b =>
+            modelBuilder.Entity("HomeworkAssignmentsStudents", b =>
                 {
-                    b.HasOne("Avengers.Models.Homework_assignments", null)
+                    b.HasOne("Avengers.Models.HomeworkAssignments", null)
                         .WithMany()
                         .HasForeignKey("AssignmentsId")
                         .OnDelete(DeleteBehavior.Cascade)

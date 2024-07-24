@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model Avengers.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
@@ -8,71 +8,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <!-- theme meta -->
     <meta name="theme-name" content="quixlab" />
-
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
-    <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <!-- Pignose Calender -->
     <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
-    <!-- Chartist -->
     <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
-
 </head>
 
 <body>
-
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
-            </svg>
-        </div>
-    </div>
-    <!--*******************
-        Preloader end
-    ********************-->
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
     <div id="main-wrapper">
-
-        <!--**********************************
-            Nav header start
-        ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="./">
                     <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="./images/logo-compact.png" alt=""></span>
-                    <span class="brand-title">
-                        <img src="images/logo-text.png" alt="">
-                    </span>
+                    <span class="brand-title"><img src="images/logo-text.png" alt=""></span>
                 </a>
             </div>
         </div>
-        <!--**********************************
-            Nav header end
-        ***********************************-->
-        <!--**********************************
-            Header start
-        ***********************************-->
+
         <div class="header">
             <div class="header-content clearfix">
-
                 <div class="nav-control">
-                    <div class="hamburger">
-                        <span class="toggle-icon"><i class="icon-menu"></i></span>
-                    </div>
+                    <div class="hamburger"><span class="toggle-icon"><i class="icon-menu"></i></span></div>
                 </div>
                 <div class="header-left">
                     <div class="input-group icons">
@@ -90,8 +50,6 @@
                 <div class="header-right">
                     <ul class="clearfix">
                         <li class="icons dropdown">
-                     
-                        <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <img src="images/user/1.png" height="40" width="40" alt="">
@@ -99,17 +57,9 @@
                             <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <li>
-                                            <a href="./Profile"><i class="icon-user"></i> <span>Profile</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
-                                            </a>
-                                        </li>
-
+                                        <li><a href="./Profile"><i class="icon-user"></i> <span>Profile</span></a></li>
+                                        <li><a href="javascript:void()"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div></a></li>
                                         <hr class="my-2">
-
                                         <li><a href="./Identity/Account/Login"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
@@ -119,20 +69,10 @@
                 </div>
             </div>
         </div>
-        <!--***********
 
-        <!--**********************************
-            Header end ti-comment-alt
-        ***********************************-->
-        <!--**********************************
-            Sidebar start
-        ***********************************-->
         <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                    
-                   
-                    
                     <li class="nav-label">Apps</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -150,7 +90,7 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="./Profile">Profile</a></li>
-                            <li><a href="./Calendar">Calender</a></li>
+                            <li><a href="./Calendar">Calendar</a></li>
                         </ul>
                     </li>
                     <li>
@@ -158,12 +98,9 @@
                             <i class="icon-graph menu-icon"></i> <span class="nav-text">Charts</span>
                         </a>
                         <ul aria-expanded="false">
-                            
                             <li><a href="./Charts">My statistics</a></li>
-                            
                         </ul>
                     </li>
-                   
                     <li>
                         <a href="./Planner" aria-expanded="false">
                             <i class="icon-badge menu-icon"></i><span class="nav-text">Planner</span>
@@ -175,9 +112,8 @@
                             <i class="icon-note menu-icon"></i><span class="nav-text">Submit homework</span>
                         </a>
                         <ul aria-expanded="false">
-                          
-                            <li><a href="./Editor">Editor</a></li>
-                           
+                            <li><a href="./HomeworkCreation">Editor</a></li>
+                            <li><a href="./HomeworkAssignment">Assignments</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">My grades</li>
@@ -186,165 +122,91 @@
                             <i class="icon-menu menu-icon"></i><span class="nav-text">Table</span>
                         </a>
                         <ul aria-expanded="false">
-                            
                             <li><a href="./Grades" aria-expanded="false">Current grades</a></li>
                         </ul>
                     </li>
-                   
                 </ul>
             </div>
         </div>
-        <!--**********************************
-            Sidebar end
-        ***********************************-->
-        <!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
 
+        <div class="content-body">
             <div class="container-fluid mt-3">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card gradient-1">
+                    <div class="col-lg-12">
+                        <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title text-white">Products Sold</h3>
-                                <div class="d-inline-block">
-                                    <h2 class="text-white">4565</h2>
-                                    <p class="text-white mb-0">Jan - March 2019</p>
-                                </div>
-                                <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card gradient-2">
-                            <div class="card-body">
-                                <h3 class="card-title text-white">Net Profit</h3>
-                                <div class="d-inline-block">
-                                    <h2 class="text-white">$ 8541</h2>
-                                    <p class="text-white mb-0">Jan - March 2019</p>
-                                </div>
-                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card gradient-3">
-                            <div class="card-body">
-                                <h3 class="card-title text-white">Net Profit</h3>
-                                <div class="d-inline-block">
-                                    <h2 class="text-white">$ 8541</h2>
-                                    <p class="text-white mb-0">Jan - March 2019</p>
-                                </div>
-                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="active-member">
-                                        <div class="table-responsive">
-                                            <table class="table table-xs mb-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Teacher</th>
-                                                        <th>Title</th>
-                                                        <th>Due</th>
+                                <h3 class="card-title">Homework Assignments</h3>
+                                <div class="table-responsive">
+                                    <table class="table table-xs mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Teacher</th>
+                                                <th>Title</th>
+                                                <th>Subject</th>
+                                                <th>Due Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @if (Model.HomeworkAssignments == null || !Model.HomeworkAssignments.Any())
+                                            {
+                                                <tr>
+                                                    <td colspan="5" class="text-center">@Model.Message</td>
+                                                </tr>
+                                            }
+                                            else
+                                            {
+                                                @foreach (var homework in Model.HomeworkAssignments)
+                                                {
+                                                    <tr class="clickable-row">
+                                                        <td>@homework.Id</td>
+                                                        <td>@homework.Teacher?.Name</td>
+                                                        <td>@homework.Title</td>
+                                                        <td>@homework.Subject?.Name</td>
+                                                        <td>@homework.DueDate?.ToString()</td>
                                                     </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/1.jpg" class="rounded-circle mr-3" alt="">Sarah Smith</td>
-                                                        <td>iPhone X</td>
-                                                        <td><span>United States</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/2.jpg" class="rounded-circle mr-3" alt="">Walter R.</td>
-                                                        <td>Pixel 2</td>
-                                                        <td><span>Canada</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/3.jpg" class="rounded-circle mr-3" alt="">Andrew D.</td>
-                                                        <td>OnePlus</td>
-                                                        <td><span>Germany</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/6.jpg" class="rounded-circle mr-3" alt=""> Megan S.</td>
-                                                        <td>Galaxy</td>
-                                                        <td><span>Japan</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/4.jpg" class="rounded-circle mr-3" alt=""> Doris R.</td>
-                                                        <td>Moto Z2</td>
-                                                        <td><span>England</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><img src="./images/avatar/5.jpg" class="rounded-circle mr-3" alt="">Elizabeth W.</td>
-                                                        <td>Notebook Asus</td>
-                                                        <td><span>China</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                                }
+                                            }
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-       
                     </div>
                 </div>
             </div>
-            <!-- #/ container -->
         </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-        <!--**********************************
-            Footer start
-        ***********************************-->
-       
-        <!--**********************************
-            Footer end
-        ***********************************-->
     </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
-    <!--**********************************
-        Scripts
-    ***********************************-->
+
     <script src="plugins/common/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/gleek.js"></script>
     <script src="js/styleSwitcher.js"></script>
-
-    <!-- Chartjs -->
     <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
-    <!-- Circle progress -->
     <script src="./plugins/circle-progress/circle-progress.min.js"></script>
-    <!-- Datamap -->
     <script src="./plugins/d3v3/index.js"></script>
     <script src="./plugins/topojson/topojson.min.js"></script>
     <script src="./plugins/datamaps/datamaps.world.min.js"></script>
-    <!-- Morrisjs -->
     <script src="./plugins/raphael/raphael.min.js"></script>
     <script src="./plugins/morris/morris.min.js"></script>
-    <!-- Pignose Calender -->
     <script src="./plugins/moment/moment.min.js"></script>
     <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
-    <!-- ChartistJS -->
     <script src="./plugins/chartist/js/chartist.min.js"></script>
     <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
-
-
-
     <script src="./js/dashboard/dashboard-1.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var clickableRows = document.querySelectorAll('.clickable-row');
+            clickableRows.forEach(function (row) {
+                row.addEventListener('click', function () {
+                    var id = this.querySelector('td').textContent.trim(); 
+                    window.location.href = '/HomeworkCreation?id=' + id; 
+                });
+            });
+        });
+    </script>
+
 
 </body>

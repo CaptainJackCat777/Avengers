@@ -11,14 +11,21 @@ namespace Avengers
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+            {
+                options.SignIn.RequireConfirmedAccount = true;
+                // You might want to configure other options here, like password requirements
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            builder.Services.AddRazorPages(); // Ensure Razor Pages services are added
+            builder.Services.AddControllersWithViews(); // Ensure MVC services are added
 
             var app = builder.Build();
 
@@ -30,8 +37,7 @@ namespace Avengers
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseHsts(); // Ensure HSTS is applied in production
             }
 
             app.UseHttpsRedirection();
@@ -43,9 +49,11 @@ namespace Avengers
             app.UseAuthorization();
 
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-            app.MapRazorPages();
+     name: "default",
+     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+            app.MapRazorPages(); // Ensure Razor Pages routes are mapped
 
             app.Run();
         }

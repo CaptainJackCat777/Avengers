@@ -1,83 +1,86 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Avengers.Models;
+using Avengers.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Avengers.Controllers
 {
     public class HomeworkCreationController : Controller
     {
-        // GET: HomeworkCreationController
-        public ActionResult Index()
+        private readonly ApplicationDbContext _context;
+
+        public HomeworkCreationController(ApplicationDbContext context)
         {
-            return View();
+            _context = context;
         }
 
-        // GET: HomeworkCreationController/Details/5
-        public ActionResult Details(int id)
+        // GET: HomeworkCreation/Details/5
+        public async Task<IActionResult> Details(int id)
         {
-            return View();
+            var homework = await _context.HomeworkCreations
+                .Include(h => h.HomeworkAssignment)
+                .FirstOrDefaultAsync(h => h.Id == id);
+
+            if (homework == null)
+            {
+                return NotFound();
+            }
+
+            return View(homework);
         }
 
-        // GET: HomeworkCreationController/Create
-        public ActionResult Create()
+        // GET: HomeworkCreation/Edit/5
+        public async Task<IActionResult> Edit(int id)
         {
-            return View();
+            var homework = await _context.HomeworkCreations.FindAsync(id);
+
+            if (homework == null)
+            {
+                return NotFound();
+            }
+
+            return View(homework);
         }
 
-        // POST: HomeworkCreationController/Create
+        // POST: HomeworkCreation/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Text,FilePath,StudentId,HomeworkAssignmentId")] HomeworkCreation homeworkCreation)
         {
-            try
+            if (id != homeworkCreation.Id)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
+
+            if (ModelState.IsValid)
             {
-                return View();
+                try
+                {
+                    _context.Update(homeworkCreation);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!HomeworkCreationExists(homeworkCreation.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return RedirectToAction(nameof(Details), new { id = homeworkCreation.Id });
             }
+
+            return View(homeworkCreation);
         }
 
-        // GET: HomeworkCreationController/Edit/5
-        public ActionResult Edit(int id)
+        private bool HomeworkCreationExists(int id)
         {
-            return View();
-        }
-
-        // POST: HomeworkCreationController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: HomeworkCreationController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeworkCreationController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return _context.HomeworkCreations.Any(e => e.Id == id);
         }
     }
 }
