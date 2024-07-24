@@ -38,7 +38,11 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .gradient-3, .dropdown-mega-menu .ext-link.link-2 a, .header-right .icons .user-img .activity {
     background-image: linear-gradient(230deg, mediumpurple, cornflowerblue);
+}
     
+
+.gradient-4, .sidebar-right .nav-tabs .nav-item .nav-link.active::after, .sidebar-right .nav-tabs .nav-item .nav-link.active span i::before {
+    background-image: linear-gradient(230deg, #0e4cfd, #6a8eff);
 }
 
 .gradient-5 {
@@ -3308,7 +3312,7 @@ body {
     left: -30px;
     top: -30px;
     right: 50px;
-    background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-avengers-logo-9305754-7581611.png);
+   /* background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-avengers-logo-9305754-7581611.png);*/
     /*background-image: src(img/avengers-logo-mini.png);*/
     /*background-image: url(https://e0.pxfuel.com/wallpapers/433/258/desktop-wallpaper-for-10-png-avengers-logo-top.jpg);*/
     /*box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);*/
@@ -3318,6 +3322,18 @@ body {
     overflow: hidden;
     background-position-y:right;
     
+}
+.brand-logo {
+    width: 300px;
+    height: 200px;
+    background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-avengers-logo-9305754-7581611.png);
+    /*width: 100%;
+    height: 100%;
+    background-image: url("C:\Users\User\Documents\AIBEST\Avengers_README.md at main · CaptainJackCat777_Avengers_files\Avengers\Avengers\wwwroot\images\belo-logo.png");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -2%;
 }
 
     .nav-header .logo-abbr {
@@ -3332,23 +3348,28 @@ body {
 
 .nav-header .brand-logo {
     z-index: 999;
+    
 }
 
     .nav-header .brand-logo a {
         padding: 1.607rem 1.8125rem;
         display: block;
+        
     }
 
         .nav-header .brand-logo a i {
             font-size: 1.375rem;
+            
         }
 
         .nav-header .brand-logo a b img {
             max-width: 1.5625rem;
+            
         }
 
         .nav-header .brand-logo a span {
             font-size: 1.125rem;
+            
         }
 
    

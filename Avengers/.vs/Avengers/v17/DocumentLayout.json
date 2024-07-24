@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\ourstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\ourstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,24 +55,8 @@
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\grades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\style.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\style.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -49,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\wwwroot\\css\\ourstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\ourstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\user\\documents\\aibest\\avengers_readme.md at main \u00B7 captainjackcat777_avengers_files\\avengers\\avengers\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,16 +78,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
-              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-13T20:35:55.112Z",
-              "IsPinned": true,
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:38:26.841Z",
               "EditorCaption": ""
             },
             {
@@ -96,43 +103,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "homepage.css",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\homepage.css",
+              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
+              "RelativeToolTip": "wwwroot\\css\\homepage.css",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-24T19:22:14.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AQIAAO8MAAAAAAAAAAAkwAcNAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-13T20:35:55.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OurStyle.css",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\OurStyle.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\OurStyle.css",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\OurStyle.css",
               "RelativeToolTip": "wwwroot\\css\\OurStyle.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-18T08:22:32.157Z"
+              "WhenOpened": "2024-07-18T08:22:32.157Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "style.css.map",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css.map",
-              "RelativeDocumentMoniker": "wwwroot\\css\\style.css.map",
-              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\wwwroot\\css\\style.css.map",
-              "RelativeToolTip": "wwwroot\\css\\style.css.map",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-14T13:01:55.296Z"
+              "DocumentIndex": 4,
+              "Title": "Homepage.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Homepage.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Homepage.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Homepage.cshtml",
+              "RelativeToolTip": "Pages\\Homepage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T16:47:30.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAB8AAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABAAAAB8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T15:53:05.318Z"
+              "WhenOpened": "2024-07-21T15:53:05.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "Pages\\Login.cshtml",
@@ -140,76 +176,77 @@
               "RelativeToolTip": "Pages\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-19T07:55:45.333Z"
+              "WhenOpened": "2024-07-19T07:55:45.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Profile.cshtml",
               "RelativeDocumentMoniker": "Pages\\Profile.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Profile.cshtml",
               "RelativeToolTip": "Pages\\Profile.cshtml",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAiwK0AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-13T10:36:57.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Editor.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Editor.cshtml",
               "RelativeDocumentMoniker": "Pages\\Editor.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Editor.cshtml",
               "RelativeToolTip": "Pages\\Editor.cshtml",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAiwK4AAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAK4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-13T08:25:17.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Charts.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Charts.cshtml",
               "RelativeDocumentMoniker": "Pages\\Charts.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Charts.cshtml",
               "RelativeToolTip": "Pages\\Charts.cshtml",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAiwLAAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-13T08:32:01.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Grades.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Grades.cshtml",
               "RelativeDocumentMoniker": "Pages\\Grades.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Grades.cshtml",
               "RelativeToolTip": "Pages\\Grades.cshtml",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAAALoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-12T08:28:40.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AQIAAK4AAAAAAAAAAAAAALsAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-11T10:33:02.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -221,19 +258,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-11T10:31:04.039Z"
+              "WhenOpened": "2024-07-11T10:31:04.039Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Pages\\Error.cshtml",
@@ -245,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIBEST\\Avengers_README.md at main \u00B7 CaptainJackCat777_Avengers_files\\Avengers\\Avengers\\Pages\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
