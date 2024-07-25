@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Avengers.Pages
 {
-    [Authorize(Roles = "Administrator")]
+   
     public class ManageUsersModel : PageModel
     {
         private readonly ApplicationDbContext _context;

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Avengers.Data;
 using Avengers.Models;
 
@@ -12,36 +11,82 @@ namespace Avengers.Pages
 {
     public class HomeworkGradingModel : PageModel
     {
-        private readonly Avengers.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public HomeworkGradingModel(Avengers.Data.ApplicationDbContext context)
+        public HomeworkGradingModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        public IActionResult OnGet()
+        [BindProperty]
+        public Homework_creation Homework_creation { get; set; } = default!;
+
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
-        ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Id");
-        ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Id");
+            if (id == null || _context.HomeworkCreations == null)
+            {
+                return NotFound();
+            }
+
+            var homework_creation = await _context.HomeworkCreations
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (homework_creation == null)
+            {
+                return NotFound();
+            }
+
+            Homework_creation = homework_creation;
+            ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Title");
             return Page();
         }
 
-        [BindProperty]
-        public Homework_creation Homework_creation { get; set; } = default!;
-        
-
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.HomeworkCreations == null || Homework_creation == null)
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            _context.HomeworkCreations.Add(Homework_creation);
-            await _context.SaveChangesAsync();
+            var existingHomework = await _context.HomeworkCreations
+                .AsNoTracking()
+                .FirstOrDefaultAsync(h => h.Id == Homework_creation.Id);
+
+            if (existingHomework == null)
+            {
+                return NotFound();
+            }
+
+            // Only update the fields that need to be changed
+            _context.Attach(Homework_creation).State = EntityState.Modified;
+
+            // Ensure only specific fields are updated
+            _context.Entry(Homework_creation).Property(x => x.Text).IsModified = true;
+            _context.Entry(Homework_creation).Property(x => x.Grade).IsModified = true;
+            _context.Entry(Homework_creation).Property(x => x.Graded).IsModified = true;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!Homework_creationExists(Homework_creation.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return RedirectToPage("./Index");
+        }
+
+        private bool Homework_creationExists(int id)
+        {
+            return (_context.HomeworkCreations?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

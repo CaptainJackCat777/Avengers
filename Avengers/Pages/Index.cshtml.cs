@@ -1,5 +1,6 @@
 ﻿using Avengers.Data;
 using Avengers.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
@@ -21,22 +22,43 @@ namespace Avengers.Pages
 
         public string? UserEmail { get; set; }
         public Role? UserRole { get; set; }
-        public int? UserId { get; set; } // Add this property
+        public int? UserId { get; set; }
         public List<Homework_creation> HomeworkCreations { get; set; } = new List<Homework_creation>();
         public List<Homework_assignments> HomeworkAssignments { get; set; } = new List<Homework_assignments>();
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
             UserEmail = HttpContext.Session.GetString("UserEmail");
 
-            // Fetch the user from the database
-            var user = _context.Users.FirstOrDefault(u => u.Email == UserEmail);
-            UserRole = user?.UserRole;
-            UserId = user?.Id; // Set UserId property
+            if (UserEmail == null)
+            {
+                // Redirect to login if not authenticated
+                return RedirectToPage("/Login");
+            }
 
-            // Fetch data from the database
+            var user = _context.Users.FirstOrDefault(u => u.Email == UserEmail);
+            if (user == null || !IsUserAuthorized(user))
+            {
+                // Redirect to login if user is not authorized
+                return RedirectToPage("/Login");
+            }
+
+            UserRole = user?.UserRole;
+            UserId = user?.Id;
+
+            // Get all homework creations without any restrictions
             HomeworkCreations = _context.HomeworkCreations.ToList();
             HomeworkAssignments = _context.HomeworkAssignments.ToList();
+
+            return Page();
+        }
+
+        private bool IsUserAuthorized(Users user)
+        {
+            // Define your authorization logic here
+            return user.UserRole == Role.Students ||
+                   user.UserRole == Role.Teachers ||
+                   user.UserRole == Role.Administrator;
         }
     }
 }

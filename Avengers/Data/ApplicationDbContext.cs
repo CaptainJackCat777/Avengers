@@ -57,17 +57,7 @@ namespace Avengers.Data
                 .WithMany()
                 .HasForeignKey(t => t.SubjectId);
 
-            modelBuilder.Entity<Subjects>().HasData(
-               new Subjects { Id = 1, Name = "Mathematics", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 2, Name = "English", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 3, Name = "Geography", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 4, Name = "History", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 5, Name = "Physics", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 6, Name = "Information Technology", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 7, Name = "Bulgarian", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 8, Name = "Biology", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") },
-               new Subjects { Id = 9, Name = "Physical Education", created = DateTime.UtcNow.ToString("o"), last_modified = DateTime.UtcNow.ToString("o") }
-           );
+            
         }
 
     }

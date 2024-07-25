@@ -5,13 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Authorization;
 using Avengers.Data;
 using Avengers.Models;
 
 namespace Avengers.Pages
 {
-    [Authorize(Roles = "Teachers,Administrator")] // Restrict access to specific roles
     public class HomeworkAssignmentModel : PageModel
     {
         private readonly ApplicationDbContext _context;

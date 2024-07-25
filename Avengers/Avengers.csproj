@@ -25,9 +25,4 @@
     <Folder Include="NewFolder\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\css\OurStyle.css" />
-    <None Include="wwwroot\images\avengers-logo.png" />
-  </ItemGroup>
-
 </Project>

@@ -18,6 +18,7 @@
         public Subjects? Teacher { get; set; }
         public string? DueDate { get; set; }
         public string? Title { get; set; }
+        public string? Description { get; set; }
 
         public ICollection<Students>? Students { get; set; }
         public ICollection<Homework_creation>? HomeworkCreations { get; set; }  // Add this collection

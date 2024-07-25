@@ -1,66 +1,100 @@
-﻿@page "{id:int}"
+﻿@page "{id:int?}"
 @model Avengers.Pages.HomeworkCreationModel
 
 @{
     ViewData["Title"] = "Homework Creation";
+    var isSubmitted = Model.Homework_creation.Submitted;
+    var isEditable = !isSubmitted || User.IsInRole("Teacher"); // Teachers can always edit
 }
 
 <h1>Homework Creation</h1>
 
-@if (Model.HomeworkAssignment != null)
-{
-<div>
-    <h3>Assignment Details</h3>
-    <p><strong>Title:</strong> @Model.HomeworkAssignment.Title</p>
-
-    <p><strong>Due Date:</strong> @Model.HomeworkAssignment.DueDate</p>
-    <!-- Add any additional assignment details you want to display -->
-</div>
-}
-
+<h4>Create or Edit Homework</h4>
 <hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (isSubmitted && User.IsInRole("Student"))
+        {
+            <div class="alert alert-info">
+                This assignment has been submitted and is pending grading.
+            </div>
+        }
+        else
+        {
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.Created" class="control-label"></label>
-        <input asp-for="Homework_creation.Created" class="form-control" />
-        <span asp-validation-for="Homework_creation.Created" class="text-danger"></span>
+                <!-- Hidden ID field for edit -->
+                <input type="hidden" asp-for="Homework_creation.Id" />
+
+                <!-- Text Input -->
+                <div class="form-group">
+                    <label asp-for="Homework_creation.Text" class="control-label"></label>
+                    @if (isEditable)
+                    {
+                        <input asp-for="Homework_creation.Text" class="form-control" />
+                    }
+                    else
+                    {
+                        <input asp-for="Homework_creation.Text" class="form-control" readonly />
+                    }
+                    <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
+                </div>
+
+                <!-- Homework Assignment Dropdown -->
+                <div class="form-group">
+                    <label asp-for="Homework_creation.HomeworkAssignmentId" class="control-label"></label>
+                    @if (isEditable)
+                    {
+                        <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId"></select>
+                    }
+                    else
+                    {
+                        <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId" disabled></select>
+                    }
+                    <span asp-validation-for="Homework_creation.HomeworkAssignmentId" class="text-danger"></span>
+                </div>
+
+                <!-- Submitted Checkbox -->
+                <div class="form-group">
+                    <label asp-for="Homework_creation.Submitted" class="control-label">
+                        @if (isEditable)
+                        {
+                            <input class="form-check-input" asp-for="Homework_creation.Submitted" />
+                            @Html.DisplayNameFor(model => model.Homework_creation.Submitted)
+                        }
+                        else
+                        {
+                            <span>Submitted: @Model.Homework_creation.Submitted</span>
+                        }
+                    </label>
+                </div>
+
+                <!-- Hidden fields for default values -->
+                <input type="hidden" asp-for="Homework_creation.Created" />
+                <input type="hidden" asp-for="Homework_creation.LastModified" />
+                <input type="hidden" asp-for="Homework_creation.Graded" value="false" />
+                <input type="hidden" asp-for="Homework_creation.FilePath" />
+                <input type="hidden" asp-for="Homework_creation.Grade" />
+
+                <!-- Save button -->
+                @if (isEditable)
+                {
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                }
+            </form>
+        }
     </div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.LastModified" class="control-label"></label>
-        <input asp-for="Homework_creation.LastModified" class="form-control" />
-        <span asp-validation-for="Homework_creation.LastModified" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.Text" class="control-label"></label>
-        <input asp-for="Homework_creation.Text" class="form-control" />
-        <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.FilePath" class="control-label"></label>
-        <input asp-for="Homework_creation.FilePath" class="form-control" />
-        <span asp-validation-for="Homework_creation.FilePath" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.StudentId" class="control-label"></label>
-        <select asp-for="Homework_creation.StudentId" class="form-control" asp-items="ViewBag.StudentId"></select>
-    </div>
-    <div class="form-group">
-        <label asp-for="Homework_creation.Grade" class="control-label"></label>
-        <input asp-for="Homework_creation.Grade" class="form-control" />
-        <span asp-validation-for="Homework_creation.Grade" class="text-danger"></span>
-    </div>
-   
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-</form>
+</div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="./Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,56 +1,49 @@
 ﻿@page
 @model Avengers.Pages.HomeworkAssignmentModel
-@using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore.Mvc.RazorPages
 @using Microsoft.AspNetCore.Mvc
 
 @{
     ViewData["Title"] = "Homework Assignment";
-
-    // Check if the user is authorized
-    var isAuthorized = User.IsInRole("Teachers") || User.IsInRole("Administrator");
 }
 
-@if (isAuthorized)
-{
-    <h1>Homework Assignment</h1>
+<h1>Homework Assignment</h1>
 
-    <h4>Homework_assignments</h4>
-    <hr />
-    <div class="row">
-        <div class="col-md-4">
-            <form method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Homework_assignments.SubjectId" class="control-label"></label>
-                    <select asp-for="Homework_assignments.SubjectId" class="form-control" asp-items="ViewBag.SubjectId"></select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Homework_assignments.TeacherId" class="control-label"></label>
-                    <select asp-for="Homework_assignments.TeacherId" class="form-control" asp-items="ViewBag.TeacherId"></select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Homework_assignments.DueDate" class="control-label"></label>
-                    <input asp-for="Homework_assignments.DueDate" class="form-control" />
-                    <span asp-validation-for="Homework_assignments.DueDate" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Homework_assignments.Title" class="control-label"></label>
-                    <input asp-for="Homework_assignments.Title" class="form-control" />
-                    <span asp-validation-for="Homework_assignments.Title" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
-                </div>
-            </form>
-        </div>
+<h4>Homework_assignments</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Homework_assignments.SubjectId" class="control-label"></label>
+                <select asp-for="Homework_assignments.SubjectId" class="form-control" asp-items="ViewBag.SubjectId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Homework_assignments.TeacherId" class="control-label"></label>
+                <select asp-for="Homework_assignments.TeacherId" class="form-control" asp-items="ViewBag.TeacherId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Homework_assignments.DueDate" class="control-label"></label>
+                <input asp-for="Homework_assignments.DueDate" class="form-control" />
+                <span asp-validation-for="Homework_assignments.DueDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Homework_assignments.Title" class="control-label"></label>
+                <input asp-for="Homework_assignments.Title" class="form-control" />
+                <span asp-validation-for="Homework_assignments.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Homework_assignments.Description" class="control-label"></label>
+                <textarea asp-for="Homework_assignments.Description" class="form-control"></textarea>
+                <span asp-validation-for="Homework_assignments.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-}
-else
-{
-    <h2>You do not have permission to view this page.</h2>
-}
+</div>
 
 <div>
     <a asp-page="Index">Back to List</a>

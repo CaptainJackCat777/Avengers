@@ -25,17 +25,21 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 @import url(../plugins/metismenu/css/metisMenu.min.css);
 @import url(../plugins/bootstrap-select/dist/css/bootstrap-select.min.css);
 
+
 .gradient-1, .dropdown-mega-menu .ext-link.link-1 a, .morris-hover, .datamaps-hoverover {
-    background-image: linear-gradient(230deg, #759bff, #843cf6);
+    background-image: linear-gradient(230deg, mediumpurple, cornflowerblue);
+    
 }
 
 .gradient-2, .dropdown-mega-menu .ext-link.link-3 a {
-    background-image: linear-gradient(230deg, #fc5286, #fbaaa2);
+    background-image: linear-gradient(230deg, mediumpurple, cornflowerblue);
+    
 }
 
 .gradient-3, .dropdown-mega-menu .ext-link.link-2 a, .header-right .icons .user-img .activity {
-    background-image: linear-gradient(230deg, #ffc480, #ff763b);
+    background-image: linear-gradient(230deg, mediumpurple, cornflowerblue);
 }
+    
 
 .gradient-4, .sidebar-right .nav-tabs .nav-item .nav-link.active::after, .sidebar-right .nav-tabs .nav-item .nav-link.active span i::before {
     background-image: linear-gradient(230deg, #0e4cfd, #6a8eff);
@@ -135,7 +139,15 @@ body {
     line-height: 1.5;
     color: #76838f;
     text-align: left;
-    background-color: #F3F3F9;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-gradient-background-background-design_509471-38.jpg); 
+    /*background-image: url(https://img.freepik.com/premium-photo/gradient-background-bright-light-mobile-screen-green-orange-soft-high-definition-jpg_1161162-3361.jpg);*/
+    /*background-image: url(https://www.solidbackgrounds.com/images/2048x1536/2048x1536-violet-blue-solid-color-background.jpg);*/
+    /*background-image: url(https://www.solidbackgrounds.com/images/2048x1536/2048x1536-violet-blue-solid-color-background.jpg);*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 [tabindex="-1"]:focus {
@@ -152,7 +164,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
-
+/******** Style for Privacy Policy ********/
+.privacy-policy{
+    color: white;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 30px;
+}
 
 
 .col {
@@ -2490,6 +2508,7 @@ input[type="button"].btn-block {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        
     }
 
 .navbar-brand {
@@ -2568,6 +2587,7 @@ input[type="button"].btn-block {
     .navbar-expand-sm > .container-fluid {
         padding-right: 0;
         padding-left: 0;
+        
     }
 }
 
@@ -2937,6 +2957,8 @@ input[type="button"].btn-block {
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+    border-radius: 20%;
+    margin-right: 30% 20% 20% 20%;
 }
 
 .card-title {
@@ -3201,7 +3223,7 @@ button.close {
 }
 
 .gradient-1-text {
-    color: #f53c79;
+    color: black !important;
 }
 
 .gradient-2 {
@@ -3281,16 +3303,37 @@ body {
 }
 
 .nav-header {
-    height: 5rem;
-    width: 15.1875rem;
+    height: 100%;
+    width: 100%;
     display: inline-block;
+    /*display: block;*/
     text-align: left;
     position: absolute;
-    left: 0;
-    top: 0;
-    background: #111B27;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    left: -30px;
+    top: -30px;
+    right: 50px;
+   /* background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-avengers-logo-9305754-7581611.png);*/
+    /*background-image: src(img/avengers-logo-mini.png);*/
+    /*background-image: url(https://e0.pxfuel.com/wallpapers/433/258/desktop-wallpaper-for-10-png-avengers-logo-top.jpg);*/
+    /*box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);*/
     transition: all .2s ease;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-y:right;
+    
+}
+.brand-logo {
+    width: 300px;
+    height: 200px;
+    background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-avengers-logo-9305754-7581611.png);
+    /*width: 100%;
+    height: 100%;
+    background-image: url("C:\Users\User\Documents\AIBEST\Avengers_README.md at main · CaptainJackCat777_Avengers_files\Avengers\Avengers\wwwroot\images\belo-logo.png");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -2%;
 }
 
     .nav-header .logo-abbr {
@@ -3305,25 +3348,31 @@ body {
 
 .nav-header .brand-logo {
     z-index: 999;
+    
 }
 
     .nav-header .brand-logo a {
         padding: 1.607rem 1.8125rem;
         display: block;
+        
     }
 
         .nav-header .brand-logo a i {
             font-size: 1.375rem;
+            
         }
 
         .nav-header .brand-logo a b img {
             max-width: 1.5625rem;
+            
         }
 
         .nav-header .brand-logo a span {
             font-size: 1.125rem;
+            
         }
 
+   
 .nav-control {
     cursor: pointer;
     position: absolute;
@@ -3437,6 +3486,7 @@ body {
     .header-left .drop-down input.form-control {
         height: 100%;
         border: none;
+       
     }
 
         .header-left .drop-down input.form-control:focus {
@@ -3479,6 +3529,7 @@ body {
 .dropdown-content-body ul {
     padding: 0 1.25rem;
     background-color: #fff;
+    text-decoration: none;
 }
 
     .dropdown-content-body ul > li {
@@ -3884,6 +3935,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .content-body {
     margin-left: 15.1875rem;
     z-index: 0;
+    
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1350px) {
@@ -4235,6 +4287,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .content-body {
     margin-left: 3.75rem;
+    margin-bottom: 50px;
 }
 
 [direction="rtl"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .content-body {
@@ -5587,7 +5640,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 /* =============
    Calendar
 ============= */
-.calendar {
+/*.calendar {
     float: left;
     margin-bottom: 0;
 }
@@ -5694,7 +5747,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .fc-view-container .fc-view table {
     min-width: 450px;
 }
-
+*/
 .email-left-box {
     width: 240px;
     float: left;
@@ -6752,6 +6805,7 @@ table.dataTable thead .sorting_desc_disabled {
 
 .accordion .card-body {
     box-shadow: 0px;
+    
 }
 
 #accordion-one .fa {
@@ -7256,6 +7310,7 @@ table.dataTable thead .sorting_desc_disabled {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+   
 }
 
 @media (min-width: 1400) {

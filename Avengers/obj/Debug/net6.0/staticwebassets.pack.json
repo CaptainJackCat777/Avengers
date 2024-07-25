@@ -5,8 +5,40 @@
       "PackagePath": "staticwebassets\\Avengers.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\Bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\OurProfile.css",
+      "PackagePath": "staticwebassets\\css\\OurProfile.css"
+    },
+    {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\OurStyle.css",
       "PackagePath": "staticwebassets\\css\\OurStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\style.css",
@@ -1497,6 +1529,10 @@
       "PackagePath": "staticwebassets\\images\\avengers-logo.png"
     },
     {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\images\\belo-logo.png",
+      "PackagePath": "staticwebassets\\images\\belo-logo.png"
+    },
+    {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\images\\big\\about-2.png",
       "PackagePath": "staticwebassets\\images\\big\\about-2.png"
     },
@@ -1611,6 +1647,10 @@
     {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\images\\big\\map.png",
       "PackagePath": "staticwebassets\\images\\big\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\images\\cherno-logo.png",
+      "PackagePath": "staticwebassets\\images\\cherno-logo.png"
     },
     {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\images\\custom-select.png",

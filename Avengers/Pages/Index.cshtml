@@ -1,5 +1,5 @@
-﻿@page
-@model IndexModel
+﻿@page "/Index"
+@model Avengers.Pages.IndexModel
 @using Avengers.Models
 @{
     ViewData["Title"] = "Home page";
@@ -37,30 +37,52 @@
         <h2>Welcome to the Dashboard!</h2>
     }
 
-    <!--**********************************
-        Content body start
-    ***********************************-->
+    <!-- Content body start -->
     <div class="content-body">
         <div class="container-fluid mt-3">
-            <!-- Conditional Homework Creation Table -->
-            @if (Model.UserRole != Role.Students)
-            {
-                <h3>Homework Creations</h3>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Created</th>
-                            <th>Last Modified</th>
-                            <th>Text</th>
-                            <th>File Path</th>
-                            <th>Student</th>
-                            <th>Grade</th>
-                            <th>Homework Assignment</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var homework in Model.HomeworkCreations)
+            <!-- Homework Creation Table -->
+            <h3>Homework Creations</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Created</th>
+                        <th>Last Modified</th>
+                        <th>Text</th>
+                        <th>File Path</th>
+                        <th>Student</th>
+                        <th>Grade</th>
+                        <th>Homework Assignment</th>
+                        <th>Graded</th>
+                        <th>Submitted</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var homework in Model.HomeworkCreations)
+                    {
+                        @if (Model.UserRole == Role.Students)
+                        {
+                            if (homework.Graded)
+                            {
+                                <tr>
+                                    <td>@homework.Id</td>
+                                    <td>@homework.Created</td>
+                                    <td>@homework.LastModified</td>
+                                    <td>@homework.Text</td>
+                                    <td>@homework.FilePath</td>
+                                    <td>@homework.Student?.Name</td>
+                                    <td>@homework.Grade</td>
+                                    <td>@homework.HomeworkAssignment?.Title</td>
+                                    <td>@homework.Graded</td>
+                                    <td>@homework.Submitted</td>
+                                    <td>
+                                        <a asp-page="/HomeworkGrading" asp-route-id="@homework.Id">View/Edit</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
                         {
                             <tr>
                                 <td>@homework.Id</td>
@@ -71,11 +93,16 @@
                                 <td>@homework.Student?.Name</td>
                                 <td>@homework.Grade</td>
                                 <td>@homework.HomeworkAssignment?.Title</td>
+                                <td>@homework.Graded</td>
+                                <td>@homework.Submitted</td>
+                                <td>
+                                    <a asp-page="/HomeworkGrading" asp-route-id="@homework.Id">Grade</a>
+                                </td>
                             </tr>
                         }
-                    </tbody>
-                </table>
-            }
+                    }
+                </tbody>
+            </table>
 
             <!-- Homework Assignment Table -->
             <h3>Homework Assignments</h3>
@@ -107,12 +134,8 @@
             </table>
         </div>
     </div>
-    <!--**********************************
-        Content body end
-    ***********************************-->
-    <!--**********************************
-        Scripts
-    ***********************************-->
+    <!-- Content body end -->
+    <!-- Scripts -->
     <script src="plugins/common/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/settings.js"></script>

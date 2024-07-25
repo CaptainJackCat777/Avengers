@@ -42,6 +42,7 @@ namespace Avengers.Pages
                 return Page();
             }
 
+            HttpContext.Session.SetInt32("UserId", user.Id);
             HttpContext.Session.SetString("UserEmail", user.Email);
             HttpContext.Session.SetString("UserRole", user.UserRole?.ToString());
 
