@@ -3,160 +3,226 @@
 @using Avengers.Models
 @{
     ViewData["Title"] = "Home page";
+    var isStudent = Model.UserRole == Role.Students;
 }
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <!-- theme meta -->
     <meta name="theme-name" content="quixlab" />
-
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
-    <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <!-- Pignose Calender -->
     <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
-    <!-- Chartist -->
     <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="nav-header">
+        <div class="brand-logo">
+            <a href="./Index">
+                <a href='' target='_blank'><img src='https://i.postimg.cc/CBTkrtWk/avengers-logo.png' border='0' alt='avengers-logo' /></a>
+            </a>
+        </div>
+    </div>
+
+    <div class="header">
+
+        <div class="header-content clearfix">
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="toggle-icon"><i class="icon-menu"></i></span>
+                </div>
+            </div>
+            <div class="header-left">
+                <div class="input-group icons">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                    <div class="drop-down animated flipInX d-md-none">
+                        <form action="#">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="clearfix">
+                    <li class="icons dropdown">
+                        <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                            <span class="activity active"></span>
+                            <img src="images/user/1.png" height="40" width="40" alt="">
+                        </div>
+                        <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                            <div class="dropdown-content-body">
+                                <ul>
+                                    <li>
+                                        <a href="./Profile"><i class="icon-user"></i> <span>Profile</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void()">
+                                            <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
+                                        </a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li><a href="./Identity/Account/Login"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="nk-sidebar">
+        <div class="nk-nav-scroll">
+            <ul class="metismenu" id="menu">
+                <li class="nav-label">Apps</li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Information</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="./Profile">Profile</a></li>
+                    </ul>
+                </li>
+                
+             
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-note menu-icon"></i><span class="nav-text">Assign Homework</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="./HomeworkAssignment">Create Assignment</a></li>
+                    </ul>
+              
+                    </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-note menu-icon"></i><span class="nav-text">Management</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="./ManageUsers">Manage Users</a></li>
+                    </ul>
+
+                </li>
+               
+            </ul>
+        </div>
+    </div>
 
     @if (Model.UserEmail != null)
     {
-        <h2>Welcome, @Model.UserEmail!</h2>
-        <a href="/Profile/@Model.UserId" class="btn btn-primary">View Profile</a>
+        <div class="container-fluid">
+            <a href="/Profile/@Model.UserId" class="btn btn-primary">View Profile</a>
+        </div>
     }
     else
     {
-        <h2>Welcome to the Dashboard!</h2>
+        <div class="container-fluid">
+            <h2>Welcome to the Dashboard!</h2>
+        </div>
     }
 
-    <!-- Content body start -->
     <div class="content-body">
-        <div class="container-fluid mt-3">
+        <div class="container-fluid">
             <!-- Homework Creation Table -->
-            <h3>Homework Creations</h3>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Created</th>
-                        <th>Last Modified</th>
-                        <th>Text</th>
-                        <th>File Path</th>
-                        <th>Student</th>
-                        <th>Grade</th>
-                        <th>Homework Assignment</th>
-                        <th>Graded</th>
-                        <th>Submitted</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var homework in Model.HomeworkCreations)
-                    {
-                        @if (Model.UserRole == Role.Students)
-                        {
-                            if (homework.Graded)
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Homework Creations</h4>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                
+                                <th>Text</th>
+                               
+                                <th>Grade</th>
+                                <th>Homework Assignment</th>
+                               
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var homework in Model.HomeworkCreations)
                             {
-                                <tr>
-                                    <td>@homework.Id</td>
-                                    <td>@homework.Created</td>
-                                    <td>@homework.LastModified</td>
-                                    <td>@homework.Text</td>
-                                    <td>@homework.FilePath</td>
-                                    <td>@homework.Student?.Name</td>
-                                    <td>@homework.Grade</td>
-                                    <td>@homework.HomeworkAssignment?.Title</td>
-                                    <td>@homework.Graded</td>
-                                    <td>@homework.Submitted</td>
+                                @if (!isStudent || (isStudent && homework.Graded))
+                                {
+                                    <tr class="clickable-row" data-href="/HomeworkGrading?id=@homework.Id">
+                                        <td>@homework.Id</td>
+                                       
+                                        <td>@homework.Text</td>
+                                     
+                                        <td>@homework.Grade</td>
+                                        <td>@homework.HomeworkAssignment?.Title</td>
+                                       
+                                        <td>
+                                            <a asp-page="/HomeworkGrading" asp-route-id="@homework.Id" class="btn btn-primary btn-sm">View/Edit</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Homework Assignment Table -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Homework Assignments</h4>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                               
+                                <th>Due Date</th>
+                                <th>Title</th>
+                                <th>Actions</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var assignment in Model.HomeworkAssignments)
+                            {
+                                <tr class="clickable-row" data-href="/HomeworkCreation?id=@assignment.Id">
+                                    <td>@assignment.Id</td>
+                                   
+                                    <td>@assignment.DueDate</td>
+                                    <td>@assignment.Title</td>
                                     <td>
-                                        <a asp-page="/HomeworkGrading" asp-route-id="@homework.Id">View/Edit</a>
+                                        <a asp-page="/HomeworkCreation" asp-route-id="@assignment.Id" class="btn btn-primary btn-sm">View/Create</a>
                                     </td>
                                 </tr>
                             }
-                        }
-                        else
-                        {
-                            <tr>
-                                <td>@homework.Id</td>
-                                <td>@homework.Created</td>
-                                <td>@homework.LastModified</td>
-                                <td>@homework.Text</td>
-                                <td>@homework.FilePath</td>
-                                <td>@homework.Student?.Name</td>
-                                <td>@homework.Grade</td>
-                                <td>@homework.HomeworkAssignment?.Title</td>
-                                <td>@homework.Graded</td>
-                                <td>@homework.Submitted</td>
-                                <td>
-                                    <a asp-page="/HomeworkGrading" asp-route-id="@homework.Id">Grade</a>
-                                </td>
-                            </tr>
-                        }
-                    }
-                </tbody>
-            </table>
-
-            <!-- Homework Assignment Table -->
-            <h3>Homework Assignments</h3>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Subject</th>
-                        <th>Teacher</th>
-                        <th>Due Date</th>
-                        <th>Title</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var assignment in Model.HomeworkAssignments)
-                    {
-                        <tr>
-                            <td>@assignment.Id</td>
-                            <td>@assignment.Subject?.Name</td>
-                            <td>@assignment.Teacher?.Name</td>
-                            <td>@assignment.DueDate</td>
-                            <td>@assignment.Title</td>
-                            <td>
-                                <a asp-page="/HomeworkCreation" asp-route-id="@assignment.Id">View/Create</a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Content body end -->
+
     <!-- Scripts -->
     <script src="plugins/common/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/gleek.js"></script>
     <script src="js/styleSwitcher.js"></script>
-    <!-- Chartjs -->
     <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
-    <!-- Circle progress -->
     <script src="./plugins/circle-progress/circle-progress.min.js"></script>
-    <!-- Datamap -->
     <script src="./plugins/d3v3/index.js"></script>
     <script src="./plugins/topojson/topojson.min.js"></script>
     <script src="./plugins/datamaps/datamaps.world.min.js"></script>
-    <!-- Morrisjs -->
     <script src="./plugins/raphael/raphael.min.js"></script>
     <script src="./plugins/morris/morris.min.js"></script>
-    <!-- Pignose Calender -->
     <script src="./plugins/moment/moment.min.js"></script>
     <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
-    <!-- ChartistJS -->
     <script src="./plugins/chartist/js/chartist.min.js"></script>
     <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
     <script src="./js/dashboard/dashboard-1.js"></script>
 </body>
+</html>

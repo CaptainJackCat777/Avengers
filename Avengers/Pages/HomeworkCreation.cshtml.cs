@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Avengers.Data;
 using Avengers.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Avengers.Pages
 {
@@ -25,30 +24,14 @@ namespace Avengers.Pages
 
         public bool IsEditable { get; set; } = true;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync()
         {
             ViewData["HomeworkAssignmentId"] = new SelectList(_context.HomeworkAssignments, "Id", "Title");
 
-            if (id == null)
-            {
-                // New homework creation
-                return Page();
-            }
+            // Initialize a new Homework_creation object for new entries
+            Homework_creation = new Homework_creation();
 
-            var homework_creation = await _context.HomeworkCreations.FirstOrDefaultAsync(m => m.Id == id);
-            if (homework_creation == null)
-            {
-                return NotFound();
-            }
-
-            Homework_creation = homework_creation;
-
-            // Check user role and submission status
-            if (User.IsInRole("Student") && Homework_creation.Submitted)
-            {
-                IsEditable = false;
-            }
-
+            // For existing entries, you would need to handle the case where you pass an ID or some other means of identifying the record
             return Page();
         }
 
@@ -90,4 +73,5 @@ namespace Avengers.Pages
             return RedirectToPage("./Index");
         }
     }
+
 }

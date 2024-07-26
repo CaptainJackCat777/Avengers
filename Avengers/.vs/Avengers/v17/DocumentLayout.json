@@ -3,115 +3,113 @@
   "WorkspaceRootPath": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkCreations.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\homework_creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\homework_creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkgrading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkgrading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\V122\\AppData\\Local\\Temp\\q3pkkxld..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkcreation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkcreation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homepage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homepage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkcreation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkcreation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkassignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkassignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkassignment.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkassignment.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkgrading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkgrading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkgrading.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkgrading.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\manageusers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\manageusers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Subjects.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\manageusers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\manageusers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\controllers\\homeworkassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:controllers\\homeworkassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Teachers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Students.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\homework_assignments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\homework_assignments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkcreation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkcreation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homeworkassignment.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homeworkassignment.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\homework_assignments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\homework_assignments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkCreations.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\homework_creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\homework_creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\V122\\AppData\\Local\\Temp\\d3m0pv1i..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkAssignments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\V122\\AppData\\Local\\Temp\\fbxg0vng..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Teachers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\homepage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\homepage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -122,8 +120,30 @@
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:controllers\\homeworkcreationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\controllers\\homeworkassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:controllers\\homeworkassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Subjects.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Students.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\views\\homeworkassignments\\homework_assignments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -174,6 +194,12 @@
     {
       "AbsoluteMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|c:\\users\\v122\\documents\\work\\avengers\\avengers\\data\\migrations\\20240724220708_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB2D65E-306D-43CF-98B2-5BD4EDF910F2}|Avengers.csproj|solutionrelative:data\\migrations\\20240724220708_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\V122\\AppData\\Local\\Temp\\q3pkkxld..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\V122\\AppData\\Local\\Temp\\q3pkkxld..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -183,7 +209,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 954,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -191,77 +217,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAzwD0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:37:44.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Homework_creation.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_creation.cs",
-              "RelativeDocumentMoniker": "Models\\Homework_creation.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_creation.cs",
-              "RelativeToolTip": "Models\\Homework_creation.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAwwBIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:37:01.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "Pages\\HomePage.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml",
-              "RelativeToolTip": "Pages\\HomePage.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T16:01:58.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AQIAADUAAAAAAAAAAAAYwEUAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-11T10:33:02.55Z",
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\V122\\AppData\\Local\\Temp\\q3pkkxld..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\q3pkkxld..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-26T08:01:15.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "homepage.css",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\homepage.css",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
-              "RelativeToolTip": "wwwroot\\css\\homepage.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-25T18:04:56.421Z",
+              "DocumentIndex": 4,
+              "Title": "HomeworkAssignment.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\HomeworkAssignment.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml.cs",
+              "RelativeToolTip": "Pages\\HomeworkAssignment.cshtml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:43:26.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "dbo.HomeworkCreations [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkCreations.sql",
-              "ToolTip": "dbo.HomeworkCreations [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-25T17:53:54.527Z",
+              "Title": "HomeworkAssignment.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml",
+              "RelativeDocumentMoniker": "Pages\\HomeworkAssignment.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml",
+              "RelativeToolTip": "Pages\\HomeworkAssignment.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:43:25.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeworkCreation.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml",
+              "RelativeDocumentMoniker": "Pages\\HomeworkCreation.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml",
+              "RelativeToolTip": "Pages\\HomeworkCreation.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T23:51:29.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeworkCreation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\HomeworkCreation.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml.cs",
+              "RelativeToolTip": "Pages\\HomeworkCreation.cshtml.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAcwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T23:51:30.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T10:33:02.55Z",
               "EditorCaption": ""
             },
             {
@@ -272,7 +299,7 @@
               "RelativeDocumentMoniker": "Pages\\HomeworkGrading.cshtml",
               "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkGrading.cshtml",
               "RelativeToolTip": "Pages\\HomeworkGrading.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAcwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-24T19:44:42.602Z",
               "EditorCaption": ""
@@ -280,178 +307,245 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HomeworkCreation.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml",
-              "RelativeDocumentMoniker": "Pages\\HomeworkCreation.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml",
-              "RelativeToolTip": "Pages\\HomeworkCreation.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T19:44:02.736Z",
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AQIAAPMMAAAAAAAAAADgvwENAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-26T06:28:38.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T08:41:58.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-24T20:07:48.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:36:18.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomePage.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\HomePage.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml.cs",
-              "RelativeToolTip": "Pages\\HomePage.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:08:05.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-11T10:31:04.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T16:52:27.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeworkAssignment.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml",
-              "RelativeDocumentMoniker": "Pages\\HomeworkAssignment.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml",
-              "RelativeToolTip": "Pages\\HomeworkAssignment.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T19:43:25.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "HomeworkGrading.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkGrading.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\HomeworkGrading.cshtml.cs",
               "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkGrading.cshtml.cs",
               "RelativeToolTip": "Pages\\HomeworkGrading.cshtml.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAACYAAAANAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAIwHwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T19:44:42.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAALEAAAAAAAAAAADwv8MAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-26T05:59:22.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ManageUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\ManageUsers.cshtml",
               "RelativeDocumentMoniker": "Pages\\ManageUsers.cshtml",
               "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\ManageUsers.cshtml",
               "RelativeToolTip": "Pages\\ManageUsers.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAKYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T21:53:26.443Z"
+              "WhenOpened": "2024-07-25T21:17:56.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "dbo.Subjects [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Subjects.sql",
-              "ToolTip": "dbo.Subjects [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-24T22:21:01.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
               "Title": "ManageUsers.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\ManageUsers.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\ManageUsers.cshtml.cs",
               "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\ManageUsers.cshtml.cs",
               "RelativeToolTip": "Pages\\ManageUsers.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAA+wFkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T21:53:49.507Z",
+              "WhenOpened": "2024-07-25T21:17:56.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeworkAssignmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\HomeworkAssignmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeworkAssignmentsController.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\HomeworkAssignmentsController.cs",
+              "RelativeToolTip": "Controllers\\HomeworkAssignmentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:41:13.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:57:19.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "homepage.css",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\homepage.css",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
+              "RelativeToolTip": "wwwroot\\css\\homepage.css",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-25T18:04:56.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "Pages\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml",
+              "RelativeToolTip": "Pages\\HomePage.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T16:01:58.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Register.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml",
+              "RelativeToolTip": "Pages\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:51:07.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Homework_assignments.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_assignments.cs",
+              "RelativeDocumentMoniker": "Models\\Homework_assignments.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_assignments.cs",
+              "RelativeToolTip": "Models\\Homework_assignments.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA2wBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T10:14:15.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:37:44.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T18:39:04.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "20240724222038_SeedSubjects.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724222038_SeedSubjects.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20240724222038_SeedSubjects.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724222038_SeedSubjects.cs",
-              "RelativeToolTip": "Data\\Migrations\\20240724222038_SeedSubjects.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T22:20:38.644Z"
+              "Title": "dbo.HomeworkCreations [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkCreations.sql",
+              "ToolTip": "dbo.HomeworkCreations [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-25T17:53:54.527Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "Homework_creation.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_creation.cs",
+              "RelativeDocumentMoniker": "Models\\Homework_creation.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_creation.cs",
+              "RelativeToolTip": "Models\\Homework_creation.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:37:01.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SQLQuery2.sql ",
+              "DocumentMoniker": "C:\\Users\\V122\\AppData\\Local\\Temp\\d3m0pv1i..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\d3m0pv1i..sql",
+              "ToolTip": "SQLQuery2.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-25T23:35:35.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dbo.HomeworkAssignments [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.HomeworkAssignments.sql",
+              "ToolTip": "dbo.HomeworkAssignments [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-25T23:13:47.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\V122\\AppData\\Local\\Temp\\fbxg0vng..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\fbxg0vng..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-25T23:21:18.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:36:18.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "Pages\\Register.cshtml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA6wBkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:51:07.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T20:07:48.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "dbo.Teachers [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Teachers.sql",
               "ToolTip": "dbo.Teachers [Data]",
@@ -460,108 +554,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "dbo.Students [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Students.sql",
-              "ToolTip": "dbo.Students [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-24T22:08:12.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "20240724220708_UserManagement.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724220708_UserManagement.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20240724220708_UserManagement.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724220708_UserManagement.cs",
-              "RelativeToolTip": "Data\\Migrations\\20240724220708_UserManagement.cs",
+              "DocumentIndex": 28,
+              "Title": "HomePage.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\HomePage.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomePage.cshtml.cs",
+              "RelativeToolTip": "Pages\\HomePage.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T22:07:08.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Homework_assignments.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_assignments.cs",
-              "RelativeDocumentMoniker": "Models\\Homework_assignments.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Models\\Homework_assignments.cs",
-              "RelativeToolTip": "Models\\Homework_assignments.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAswA0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T10:14:15.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "HomeworkCreation.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\HomeworkCreation.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkCreation.cshtml.cs",
-              "RelativeToolTip": "Pages\\HomeworkCreation.cshtml.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAAC4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:44:03.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "HomeworkAssignment.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\HomeworkAssignment.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\HomeworkAssignment.cshtml.cs",
-              "RelativeToolTip": "Pages\\HomeworkAssignment.cshtml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:43:26.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T19:57:19.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "Pages\\Login.cshtml.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAADkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:57:39.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml.cs",
-              "RelativeToolTip": "Pages\\Register.cshtml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwCoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:51:07.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Register.cshtml",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Register.cshtml",
-              "RelativeToolTip": "Pages\\Register.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T19:51:07.184Z"
+              "WhenOpened": "2024-07-25T16:08:05.063Z"
             },
             {
               "$type": "Document",
@@ -590,18 +591,108 @@
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "HomeworkAssignmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\HomeworkAssignmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeworkAssignmentsController.cs",
-              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\HomeworkAssignmentsController.cs",
-              "RelativeToolTip": "Controllers\\HomeworkAssignmentsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T19:41:13.975Z"
+              "WhenOpened": "2024-07-12T08:41:58.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T10:31:04.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T16:52:27.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "dbo.Subjects [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Subjects.sql",
+              "ToolTip": "dbo.Subjects [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T22:21:01.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:39:04.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20240724222038_SeedSubjects.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724222038_SeedSubjects.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20240724222038_SeedSubjects.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724222038_SeedSubjects.cs",
+              "RelativeToolTip": "Data\\Migrations\\20240724222038_SeedSubjects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T22:20:38.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "dbo.Students [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Students.sql",
+              "ToolTip": "dbo.Students [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T22:08:12.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20240724220708_UserManagement.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724220708_UserManagement.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20240724220708_UserManagement.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240724220708_UserManagement.cs",
+              "RelativeToolTip": "Data\\Migrations\\20240724220708_UserManagement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T22:07:08.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T19:57:39.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Homework_assignments.cshtml",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Views\\HomeworkAssignments\\Homework_assignments.cshtml",
               "RelativeDocumentMoniker": "Views\\HomeworkAssignments\\Homework_assignments.cshtml",
@@ -613,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Pages\\Profile.cshtml",
               "RelativeDocumentMoniker": "Pages\\Profile.cshtml",
@@ -625,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -637,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "ClassesController.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\ClassesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClassesController.cs",
@@ -649,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "Avengers.csproj",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Avengers.csproj",
               "RelativeDocumentMoniker": "Avengers.csproj",
@@ -661,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
@@ -673,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "TeachersController.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\TeachersController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeachersController.cs",
@@ -685,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "20240719100327_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Data\\Migrations\\20240719100327_InitialCreate.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240719100327_InitialCreate.cs",
@@ -697,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "dbo.__EFMigrationsHistory [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.__EFMigrationsHistory.sql",
               "ToolTip": "dbo.__EFMigrationsHistory [Data]",
@@ -706,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "dbo.Classes [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Avengers_53bc9b9d_9d6a_45d4_8429_2a2761773502/True/SqlTable/dbo.Classes.sql",
               "ToolTip": "dbo.Classes [Data]",
@@ -715,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "SubjectsController.cs",
               "DocumentMoniker": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\Controllers\\SubjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubjectsController.cs",

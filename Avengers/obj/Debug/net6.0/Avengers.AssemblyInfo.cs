@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Avengers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9557538f680d06c44a6dabdb54bb31bd6615750")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5b86a85966c6d5ecc684e693072e6d7094abd4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Avengers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Avengers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

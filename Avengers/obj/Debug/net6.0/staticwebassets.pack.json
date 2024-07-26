@@ -29,16 +29,16 @@
       "PackagePath": "staticwebassets\\css\\Bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\OurProfile.css",
-      "PackagePath": "staticwebassets\\css\\OurProfile.css"
-    },
-    {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\OurStyle.css",
       "PackagePath": "staticwebassets\\css\\OurStyle.css"
     },
     {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\homepage.css",
       "PackagePath": "staticwebassets\\css\\homepage.css"
+    },
+    {
+      "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\V122\\Documents\\work\\Avengers\\Avengers\\wwwroot\\css\\style.css",

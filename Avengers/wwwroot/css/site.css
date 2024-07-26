@@ -1,0 +1,197 @@
+﻿/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px; /* Top margin to give some space from the top of the page */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem; /* Larger font size for headings */
+    font-weight: bold;
+    color: #343a40; /* Darker color for headings */
+}
+
+h4 {
+    font-size: 1.5rem; /* Slightly smaller font size for sub-headings */
+    color: #6c757d; /* Gray color for sub-headings */
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 30px; /* Rounded corners for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow around cards */
+    padding: 20px; /* Padding inside cards */
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem; /* Space between form fields */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    border: 2px solid #ced4da; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px; /* Padding inside form fields */
+    font-size: 1rem; /* Font size inside form fields */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker color on hover */
+    }
+
+/* Alert Styles */
+.alert-info {
+    background-color: #d1ecf1; /* Light blue background */
+    color: #0c5460; /* Darker blue text */
+    border-color: #bee5eb; /* Border color */
+}
+
+/* Validation Error Styles */
+.text-danger {
+    color: #dc3545; /* Red color for validation errors */
+}
+
+/* Button Styles */
+.btn-back {
+    background-color: #6c757d; /* Gray color for back button */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size inside the button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Align with text */
+}
+
+    .btn-back:hover {
+        background-color: #5a6268; /* Darker color on hover */
+    }
+
+/* Table Styles */
+.table {
+    width: 100%; /* Full width */
+    margin-bottom: 1rem; /* Bottom margin */
+    color: #212529; /* Text color */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+    .table th,
+    .table td {
+        padding: 0.75rem; /* Padding inside table cells */
+        vertical-align: middle; /* Align text to the middle */
+        border-top: 1px solid #dee2e6; /* Top border color */
+        text-align: center; /* Center align text */
+    }
+
+    .table th {
+        vertical-align: middle; /* Align headers to the middle */
+        border-bottom: 2px solid #dee2e6; /* Bottom border color */
+    }
+
+    .table thead th {
+        vertical-align: middle; /* Align table headers */
+    }
+
+    .table tbody + tbody {
+        border-top: 2px solid #dee2e6; /* Border between table sections */
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered {
+    border: 2px solid #ddd;
+}
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 2px solid #ddd;
+    }
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .container {
+        margin-top: 20px; /* Reduce top margin on small screens */
+    }
+
+    .card {
+        padding: 15px; /* Reduce padding on small screens */
+    }
+}
+
+/* Site Specific Styles */
+.card {
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.table-actions form {
+    display: inline;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.btn-back {
+    margin-top: 1rem;
+}
+
+.text-center mb-4{
+    color: white;
+}
+
+.title-white {
+    color: white; /* White color for the title */
+}
+
+.btn btn-secondary {
+    border-radius: 30px;
+    color: aliceblue;
+}

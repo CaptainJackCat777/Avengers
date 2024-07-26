@@ -1,63 +1,91 @@
 ﻿@page
 @model Avengers.Pages.HomeworkGradingModel
+@using Avengers.Models
 
 @{
     ViewData["Title"] = "Homework Grading";
 }
 
-<h1>Homework Grading</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
 
-<h4>Homework Creation</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Homework_creation.Id" />
+    <div class="container">
+        @if (Model.UserRole != Role.Students)
+        {
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <h1 class="text-center mb-4 title-white">@ViewData["Title"]</h1>
+                
+                    <hr />
+                    <div class="card p-4 shadow-sm">
+                        <form method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Homework_creation.Id" />
 
-            <div class="form-group">
-                <label asp-for="Homework_creation.Text" class="control-label"></label>
-                <textarea asp-for="Homework_creation.Text" class="form-control"></textarea>
-                <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.HomeworkAssignmentId" class="control-label">Assignment</label>
+                                <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId"></select>
+                                <span asp-validation-for="Homework_creation.HomeworkAssignmentId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.Text" class="control-label">Response</label>
+                                <textarea asp-for="Homework_creation.Text" class="form-control"></textarea>
+                                <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.Grade" class="control-label"></label>
+                                <select asp-for="Homework_creation.Grade" class="form-control">
+                                    <option value="">Select Grade</option>
+                                    @foreach (var grade in Enum.GetValues(typeof(Grade)).Cast<Grade>())
+                                    {
+                                        <option value="@grade">@grade</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="Homework_creation.Grade" class="text-danger"></span>
+                            </div>
+
+                          
+
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" asp-for="Homework_creation.Graded" /> @Html.DisplayNameFor(model => model.Homework_creation.Graded)
+                                </label>
+                            </div>
+
+                            <div class="form-group text-center mt-4">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-back" asp-page="./Index" style="border-radius: 30px; color:aliceblue;">Home</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label asp-for="Homework_creation.Grade" class="control-label"></label>
-                <select asp-for="Homework_creation.Grade" class="form-control">
-                    <option value="">Select Grade</option>
-                    @foreach (var grade in Enum.GetValues(typeof(Avengers.Models.Grade)).Cast<Avengers.Models.Grade>())
-                    {
-                        <option value="@grade">@grade</option>
-                    }
-                </select>
-                <span asp-validation-for="Homework_creation.Grade" class="text-danger"></span>
+        }
+        else
+        {
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <h1 class="text-center mb-4">Access Denied</h1>
+                    <p class="text-center">You do not have permission to view this page.</p>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label asp-for="Homework_creation.HomeworkAssignmentId" class="control-label"></label>
-                <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId"></select>
-                <span asp-validation-for="Homework_creation.HomeworkAssignmentId" class="text-danger"></span>
-            </div>
-
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Homework_creation.Graded" /> @Html.DisplayNameFor(model => model.Homework_creation.Graded)
-                </label>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        }
     </div>
-</div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

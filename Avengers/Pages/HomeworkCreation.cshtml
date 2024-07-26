@@ -1,4 +1,4 @@
-﻿@page "{id:int?}"
+﻿@page
 @model Avengers.Pages.HomeworkCreationModel
 
 @{
@@ -7,94 +7,105 @@
     var isEditable = !isSubmitted || User.IsInRole("Teacher"); // Teachers can always edit
 }
 
-<h1>Homework Creation</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+                <h4 class="text-center mb-4">Create or Edit Homework</h4>
+                <hr />
+                <div class="card p-4 shadow-sm">
+                    @if (isSubmitted && User.IsInRole("Student"))
+                    {
+                        <div class="alert alert-info text-center">
+                            This assignment has been submitted and is pending grading.
+                        </div>
+                    }
+                    else
+                    {
+                        <form method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<h4>Create or Edit Homework</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        @if (isSubmitted && User.IsInRole("Student"))
-        {
-            <div class="alert alert-info">
-                This assignment has been submitted and is pending grading.
+                            <!-- Text Input -->
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.Text" class="control-label"></label>
+                                @if (isEditable)
+                                {
+                                    <input asp-for="Homework_creation.Text" class="form-control" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Homework_creation.Text" class="form-control" readonly />
+                                }
+                                <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
+                            </div>
+
+                            <!-- Homework Assignment Dropdown -->
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.HomeworkAssignmentId" class="control-label"></label>
+                                @if (isEditable)
+                                {
+                                    <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId"></select>
+                                }
+                                else
+                                {
+                                    <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId" disabled></select>
+                                }
+                                <span asp-validation-for="Homework_creation.HomeworkAssignmentId" class="text-danger"></span>
+                            </div>
+
+                            <!-- Submitted Checkbox -->
+                            <div class="form-group">
+                                <label asp-for="Homework_creation.Submitted" class="control-label">
+                                    @if (isEditable)
+                                    {
+                                        <input class="form-check-input" asp-for="Homework_creation.Submitted" />
+                                        @Html.DisplayNameFor(model => model.Homework_creation.Submitted)
+                                    }
+                                    else
+                                    {
+                                        <span>Submitted: @Model.Homework_creation.Submitted</span>
+                                    }
+                                </label>
+                            </div>
+
+                            <!-- Hidden fields for default values -->
+                            <input type="hidden" asp-for="Homework_creation.Created" />
+                            <input type="hidden" asp-for="Homework_creation.LastModified" />
+                            <input type="hidden" asp-for="Homework_creation.Graded" value="false" />
+                            <input type="hidden" asp-for="Homework_creation.FilePath" />
+                            <input type="hidden" asp-for="Homework_creation.Grade" />
+
+                            <!-- Save button -->
+                            @if (isEditable)
+                            {
+                                <div class="form-group text-center mt-4">
+                                    <input type="submit" value="Save" class="btn btn-primary" />
+                                </div>
+                            }
+                        </form>
+                    }
+                </div>
+                <div class="text-center mt-4">
+                    <a class="btn btn-back" asp-page="./Index">Back to List</a>
+                </div>
             </div>
-        }
-        else
-        {
-            <form method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                <!-- Hidden ID field for edit -->
-                <input type="hidden" asp-for="Homework_creation.Id" />
-
-                <!-- Text Input -->
-                <div class="form-group">
-                    <label asp-for="Homework_creation.Text" class="control-label"></label>
-                    @if (isEditable)
-                    {
-                        <input asp-for="Homework_creation.Text" class="form-control" />
-                    }
-                    else
-                    {
-                        <input asp-for="Homework_creation.Text" class="form-control" readonly />
-                    }
-                    <span asp-validation-for="Homework_creation.Text" class="text-danger"></span>
-                </div>
-
-                <!-- Homework Assignment Dropdown -->
-                <div class="form-group">
-                    <label asp-for="Homework_creation.HomeworkAssignmentId" class="control-label"></label>
-                    @if (isEditable)
-                    {
-                        <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId"></select>
-                    }
-                    else
-                    {
-                        <select asp-for="Homework_creation.HomeworkAssignmentId" class="form-control" asp-items="ViewBag.HomeworkAssignmentId" disabled></select>
-                    }
-                    <span asp-validation-for="Homework_creation.HomeworkAssignmentId" class="text-danger"></span>
-                </div>
-
-                <!-- Submitted Checkbox -->
-                <div class="form-group">
-                    <label asp-for="Homework_creation.Submitted" class="control-label">
-                        @if (isEditable)
-                        {
-                            <input class="form-check-input" asp-for="Homework_creation.Submitted" />
-                            @Html.DisplayNameFor(model => model.Homework_creation.Submitted)
-                        }
-                        else
-                        {
-                            <span>Submitted: @Model.Homework_creation.Submitted</span>
-                        }
-                    </label>
-                </div>
-
-                <!-- Hidden fields for default values -->
-                <input type="hidden" asp-for="Homework_creation.Created" />
-                <input type="hidden" asp-for="Homework_creation.LastModified" />
-                <input type="hidden" asp-for="Homework_creation.Graded" value="false" />
-                <input type="hidden" asp-for="Homework_creation.FilePath" />
-                <input type="hidden" asp-for="Homework_creation.Grade" />
-
-                <!-- Save button -->
-                @if (isEditable)
-                {
-                    <div class="form-group">
-                        <input type="submit" value="Save" class="btn btn-primary" />
-                    </div>
-                }
-            </form>
-        }
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

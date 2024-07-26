@@ -6,23 +6,48 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Avengers.Data;
 using Avengers.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
 
 namespace Avengers.Pages
 {
     public class HomeworkGradingModel : PageModel
     {
         private readonly ApplicationDbContext _context;
+        private readonly ILogger<HomeworkGradingModel> _logger;
 
-        public HomeworkGradingModel(ApplicationDbContext context)
+        public HomeworkGradingModel(ApplicationDbContext context, ILogger<HomeworkGradingModel> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [BindProperty]
         public Homework_creation Homework_creation { get; set; } = default!;
+        public Role? UserRole { get; set; }
+        public string? UserEmail { get; set; }
+        public int? UserId { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            UserEmail = HttpContext.Session.GetString("UserEmail");
+
+            if (UserEmail == null)
+            {
+                // Redirect to login if not authenticated
+                return RedirectToPage("/Login");
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == UserEmail);
+            if (user == null || !IsUserAuthorized(user))
+            {
+                // Redirect to login if user is not authorized
+                return RedirectToPage("/Login");
+            }
+
+            UserRole = user?.UserRole;
+            UserId = user?.Id;
+
             if (id == null || _context.HomeworkCreations == null)
             {
                 return NotFound();
@@ -84,9 +109,18 @@ namespace Avengers.Pages
             return RedirectToPage("./Index");
         }
 
+
         private bool Homework_creationExists(int id)
         {
             return (_context.HomeworkCreations?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        private bool IsUserAuthorized(Users user)
+        {
+            // Define your authorization logic here
+            return user.UserRole == Role.Students ||
+                   user.UserRole == Role.Teachers ||
+                   user.UserRole == Role.Administrator;
         }
     }
 }

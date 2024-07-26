@@ -11,9 +11,9 @@ namespace Avengers.Pages
 {
     public class RegisterModel : PageModel
     {
-        private readonly Avengers.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public RegisterModel(Avengers.Data.ApplicationDbContext context)
+        public RegisterModel(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -33,7 +33,34 @@ namespace Avengers.Pages
                 return Page();
             }
 
+            // Add user to Users table
             _context.Users.Add(Users);
+            await _context.SaveChangesAsync();
+
+            // Add user to the corresponding role table
+            if (Users.UserRole == Role.Students)
+            {
+                var student = new Students
+                {
+                    Name = Users.Name,
+                    created = DateTime.Now.ToString(),
+                    last_modified = DateTime.Now.ToString()
+                    // Assign other properties as needed
+                };
+                _context.Students.Add(student);
+            }
+            else if (Users.UserRole == Role.Teachers)
+            {
+                var teacher = new Teachers
+                {
+                    Name = Users.Name,
+                    created = DateTime.Now.ToString(),
+                    last_modified = DateTime.Now.ToString()
+                    // Assign other properties as needed
+                };
+                _context.Teachers.Add(teacher);
+            }
+
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

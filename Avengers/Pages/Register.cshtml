@@ -1,10 +1,10 @@
 ﻿@page
 @model Avengers.Pages.RegisterModel
-@{
+@* @{
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1>@ViewData["Title"]</h1> *@
 
 <head>
     <meta charset="UTF-8">
@@ -44,8 +44,8 @@
                 <div class="select-menu">
                     <select asp-for="Users.UserRole" class="input-field" aria-label="Default select example" required>
                         <option value="">Role</option>
-                        <option value="Student">Student</option>
-                        <option value="Teacher">Teacher</option>
+                        <option value="Students">Student</option>
+                        <option value="Teachers">Teacher</option>
                         <option value="Administrator">Administrator</option>
                     </select>
                     <span asp-validation-for="Users.UserRole" class="text-danger"></span>
